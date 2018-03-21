@@ -1,0 +1,3190 @@
+"Games"
+{
+	"#default"
+	{
+		"Offsets"
+		{
+			/* Game Rules */
+			"g_pGameRules"
+			{
+				"windows"	"5"
+			}
+			"GameRules_Damage_NoPhysicsForce"
+			{
+				"windows"	"20"
+			}
+			"GameRules_GetNextBestWeapon"
+			{
+				"windows"	"28"
+			}
+			"GameRules_ShouldCollide"
+			{
+				"windows"	"29"
+			}
+			"GameRules_GetViewVectors"
+			{
+				"windows"	"31"
+			}
+			"GameRules_IsSkillLevel"
+			{
+				"windows"	"48"
+			}
+			"GameRules_FlPlayerFallDamageHook"
+			{
+				"windows"	"61"
+			}
+			"GameRules_FPlayerCanTakeDamage"
+			{
+				"windows"	"62"
+			}
+			"GameRules_RadiusDamage"
+			{
+				"windows"	"67"
+			}
+			"GameRules_DeathNotice"
+			{
+				"windows"	"81"
+			}
+			"GameRules_FAllowNPCs"
+			{
+				"windows"	"118"
+			}
+			
+			
+			
+			/* CGameMovement */
+			"CGameMovement_OnLadder"
+			{
+				"windows"	"34"
+			}
+			"CGameMovement_CheckFalling"
+			{
+				"windows"	"44"
+			}
+			
+			
+			
+			/* CSceneEntity */
+			"StartPlayback"
+			{
+				"windows"	"195"
+			}
+			"CancelPlayback"
+			{
+				"windows"	"198"
+			}
+			"EstimateLength"
+			{
+				"windows"	"227"
+			}
+			"FindNamedActor_I"
+			{
+				"windows"	"231"
+			}
+			
+			
+			
+			/* CBaseGrenade */
+			"Explode"
+			{
+				"windows"	"218"
+			}
+			"Detonate"
+			{
+				"windows"	"219"
+			}
+			"GetShakeAmplitude"
+			{
+				"windows"	"222"
+			}
+			"GetShakeRadius"
+			{
+				"windows"	"223"
+			}
+
+			
+			
+			/* CBaseEntity */
+			"GetServerClass"
+			{
+				"windows"	"9"
+			}
+			"GetDataDescMap_Real"
+			{
+				"windows"	"11"
+			}
+			"TestCollision"
+			{
+				"windows"	"13"
+			}
+			"TestHitboxes"
+			{
+				"windows"	"14"
+			}
+			"ComputeWorldSpaceSurroundingBox"
+			{
+				"windows"	"15"
+			}
+			"ShouldCollide"
+			{
+				"windows"	"16"
+			}
+			"SetOwnerEntity"
+			{
+				"windows"	"17"
+			}
+			"ShouldTransmit"
+			{
+				"windows"	"18"
+			}
+			"UpdateTransmitState"
+			{
+				"windows"	"19"
+			}
+			"SetTransmit"
+			{
+				"windows"	"20"
+			}
+			"GetTracerType"
+			{
+				"windows"	"21"
+			}
+			"Spawn"
+			{
+				"windows"	"22"
+			}
+			"Precache"
+			{
+				"windows"	"23"
+			}
+			"SetModel"
+			{
+				"windows"	"24"
+			}
+			"DispatchKeyValue"
+			{
+				"windows"	"31"
+			}
+			"DispatchKeyValueVector"
+			{
+				"windows"	"29"
+			}
+			"DispatchKeyValueFloat"
+			{
+				"windows"	"30"
+			}
+			"Activate"
+			{
+				"windows"	"33"
+			}
+			"SetParent"
+			{
+				"windows"	"34"
+			}
+			"ObjectCaps"
+			{
+				"windows"	"35"
+			}
+			"AcceptInput"
+			{
+				"windows"	"36"
+			}
+			"Save"
+			{
+				"windows"	"40"
+			}
+			"Restore"
+			{
+				"windows"	"41"
+			}
+			"ShouldSavePhysics"
+			{
+				"windows"	"42"
+			}
+			"OnSave"
+			{
+				"windows"	"43"
+			}
+			"OnRestore"
+			{
+				"windows"	"44"
+			}
+			"Think"
+			{
+				"windows"	"47"
+			}
+			"GetResponseSystem"
+			{
+				"windows"	"51"
+			}
+			"DispatchResponse"
+			{
+				"windows"	"52"
+			}
+			"Classify"
+			{
+				"windows"	"53"
+			}
+			"DeathNotice"
+			{
+				"windows"	"54"
+			}
+			"ShouldAttractAutoAim"
+			{
+				"windows"	"55"
+			}
+			"GetAutoAimRadius"
+			{
+				"windows"	"56"
+			}
+			"GetAutoAimCenter"
+			{
+				"windows"	"57"
+			}
+			"PassesDamageFilter"
+			{
+				"windows"	"59"
+			}
+			"TraceAttack"
+			{
+				"windows"	"60"
+			}
+			"OnTakeDamage"
+			{
+				"windows"	"62"
+			}
+			"TakeHealth"
+			{
+				"windows"	"64"
+			}
+			"IsAlive"
+			{
+				"windows"	"65"
+			}
+			"Event_Killed"
+			{
+				"windows"	"66"
+			}
+			"Event_KilledOther"
+			{
+				"windows"	"67"
+			}
+			"BloodColor"
+			{
+				"windows"	"68"
+			}
+			"IsTriggered"
+			{
+				"windows"	"69"
+			}
+			"IsNPC"
+			{
+				"windows"	"70"
+			}
+			"IsMoving"
+			{
+				"windows"	"74"
+			}
+			"DecalTrace"
+			{
+				"windows"	"76"
+			}
+			"ImpactTrace"
+			{
+				"windows"	"77"
+			}
+			"OnControls"
+			{
+				"windows"	"78"
+			}
+			"IsNetClient"
+			{
+				"windows"	"81"
+			}
+			"GetServerVehicle"
+			{
+				"windows"	"89"
+			}
+			"IsViewable"
+			{
+				"windows"	"90"
+			}
+			"OnEntityEvent"
+			{
+				"windows"	"92"
+			}
+			"CanStandOn"
+			{
+				"windows"	"94"
+			}
+			"CB_GetEnemy_const"
+			{
+				"windows"	"95"
+			}
+			"CB_GetEnemy"
+			{
+				"windows"	"96"
+			}
+			"Use"
+			{
+				"windows"	"97"
+			}
+			"StartTouch"
+			{
+				"windows"	"98"
+			}
+			"Touch"
+			{
+				"windows"	"99"
+			}
+			"EndTouch"
+			{
+				"windows"	"100"
+			}
+			"PhysicsSimulate"
+			{
+				"windows"	"104"
+			}
+			"UpdateOnRemove"
+			{
+				"windows"	"105"
+			}
+			"StopLoopingSounds"
+			{
+				"windows"	"106"
+			}
+			"SUB_AllowedToFade"
+			{
+				"windows"	"107"
+			}
+			"Teleport"
+			{
+				"windows"	"108"
+			}
+			"MakeTracer"
+			{
+				"windows"	"110"
+			}
+			"FireBullets"
+			{
+				"windows"	"112"
+			}
+			"DoImpactEffect"
+			{
+				"windows"	"113"
+			}
+			"ModifyOrAppendCriteria"
+			{
+				"windows"	"118"
+			}
+			"GetDamage"
+			{
+				"windows"	"128"
+			}
+			"SetDamage"
+			{
+				"windows"	"129"
+			}
+			"EyePosition"
+			{
+				"windows"	"130"
+			}
+			"EyeAngles"
+			{
+				"windows"	"131"
+			}
+			"EarPosition"
+			{
+				"windows"	"133"
+			}
+			"BodyTarget"
+			{
+				"windows"	"134"
+			}
+			"HeadTarget"
+			{
+				"windows"	"135"
+			}
+			"GetViewOffset"
+			{
+				"windows"	"137"
+			}
+			"GetSmoothedVelocity"
+			{
+				"windows"	"139"
+			}
+			"GetVelocity"
+			{
+				"windows"	"140"
+			}
+			"FVisible_Vector"
+			{
+				"windows"	"141"
+			}
+			"FVisible_Entity"
+			{
+				"windows"	"142"
+			}
+			"CanBeSeenBy"
+			{
+				"windows"	"143"
+			}
+			"GetAttackDamageScale"
+			{
+				"windows"	"144"
+			}
+			"Splash"
+			{
+				"windows"	"148"
+			}
+			"WorldSpaceCenter"
+			{
+				"windows"	"149"
+			}
+			"GetSoundEmissionOrigin"
+			{
+				"windows"	"150"
+			}
+			"CreateVPhysics"
+			{
+				"windows"	"154"
+			}
+			"VPhysicsDestroyObject"
+			{
+				"windows"	"156"
+			}
+			"VPhysicsUpdate"
+			{
+				"windows"	"157"
+			}
+			"VPhysicsTakeDamage"
+			{
+				"windows"	"158"
+			}
+			"VPhysicsShadowCollision"
+			{
+				"windows"	"159"
+			}
+			"VPhysicsShadowUpdate"
+			{
+				"windows"	"160"
+			}
+			"VPhysicsCollision"
+			{
+				"windows"	"161"
+			}
+			"UpdatePhysicsShadowToCurrentPosition"
+			{
+				"windows"	"163"
+			}
+			"VPhysicsGetObjectList"
+			{
+				"windows"	"164"
+			}
+			"VPhysicsIsFlesh"
+			{
+				"windows"	"165"
+			}
+			"HasPhysicsAttacker"
+			{
+				"windows"	"166"
+			}
+			"PhysicsSolidMaskForEntity"
+			{
+				"windows"	"167"
+			}
+			"ResolveFlyCollisionCustom"
+			{
+				"windows"	"168"
+			}
+			/* End CBaseEntity */
+			
+			
+			
+			/* CBaseAnimating */
+			"GetIdealSpeed"
+			{
+				"windows"	"187"
+			}
+			"GetIdealAccel"
+			{
+				"windows"	"188"
+			}
+			"StudioFrameAdvance"
+			{
+				"windows"	"189"
+			}
+			"IsActivityFinished"
+			{
+				"windows"	"191"
+			}
+			"GetSequenceGroundSpeed"
+			{
+				"windows"	"192"
+			}
+			"ClampRagdollForce"
+			{
+				"windows"	"193"
+			}
+			"BecomeRagdollOnClient"
+			{
+				"windows"	"194"
+			}
+			"CanBecomeRagdoll"
+			{
+				"windows"	"196"
+			}
+			"SetupBones"
+			{
+				"windows"	"199"
+			}
+			"CalculateIKLocks"
+			{
+				"windows"	"200"
+			}
+			"DispatchAnimEvents"
+			{
+				"windows"	"201"
+			}
+			"HandleAnimEvent"
+			{
+				"windows"	"202"
+			}
+			"PopulatePoseParameters"
+			{
+				"windows"	"203"
+			}
+			"GetAttachment"
+			{
+				"windows"	"204"
+			}
+			"InitBoneControllers"
+			{
+				"windows"	"205"
+			}
+			"GetGroundSpeedVelocity"
+			{
+				"windows"	"206"
+			}
+			"Ignite"
+			{
+				"windows"	"208"
+			}
+			"Extinguish"
+			{
+				"windows"	"212"
+			}
+			/* End CBaseAnimating */
+			
+			
+			
+			/* CBaseCombatCharacter */
+			"GetPhysicsImpactDamageTable"
+			{
+				"windows"	"224"
+			}
+			"FInViewCone_Vector"
+			{
+				"windows"	"225"
+			}
+			"FInViewCone_Entity"
+			{
+				"windows"	"226"
+			}
+			"FInAimCone_Vector"
+			{
+				"windows"	"227"
+			}
+			"FInAimCone_Entity"
+			{
+				"windows"	"228"
+			}
+			"ShouldShootMissTarget"
+			{
+				"windows"	"229"
+			}
+			"FindMissTarget"
+			{
+				"windows"	"230"
+			}
+			"HandleInteraction"
+			{
+				"windows"	"231"
+			}
+			"BodyAngles"
+			{
+				"windows"	"232"
+			}
+			"BodyDirection2D"
+			{
+				"windows"	"233"
+			}
+			"BodyDirection3D"
+			{
+				"windows"	"234"
+			}
+			"HeadDirection2D"
+			{
+				"windows"	"235"
+			}
+			"HeadDirection3D"
+			{
+				"windows"	"236"
+			}
+			"EyeDirection2D"
+			{
+				"windows"	"237"
+			}
+			"EyeDirection3D"
+			{
+				"windows"	"238"
+			}
+			"GiveAmmo"
+			{
+				"windows"	"251"
+			}
+			"RemoveAmmo"
+			{
+				"windows"	"253"
+			}
+			"GetAmmoCount"
+			{
+				"windows"	"254"
+			}
+			"NPC_TranslateActivity"
+			{
+				"windows"	"255"
+			}
+			"Weapon_TranslateActivity"
+			{
+				"windows"	"256"
+			}
+			"Weapon_CanUse"
+			{
+				"windows"	"259"
+			}
+			"Weapon_Equip"
+			{
+				"windows"	"260"
+			}
+			"Weapon_Drop"
+			{
+				"windows"	"262"
+			}
+			"Weapon_Switch"
+			{
+				"windows"	"263"
+			}
+			"Weapon_ShootPosition"
+			{
+				"windows"	"264"
+			}
+			"Weapon_CanSwitchTo"
+			{
+				"windows"	"265"
+			}
+			"Weapon_GetSlot"
+			{
+				"windows"	"267"
+			}
+			"CanBecomeServerRagdoll"
+			{
+				"windows"	"270"
+			}
+			"OnTakeDamage_Alive"
+			{
+				"windows"	"271"
+			}
+			"OnTakeDamage_Dying"
+			{
+				"windows"	"272"
+			}
+			"OnTakeDamage_Dead"
+			{
+				"windows"	"273"
+			}
+			"OnFriendDamaged"
+			{
+				"windows"	"275"
+			}
+			"NotifyFriendsOfDamage"
+			{
+				"windows"	"276"
+			}
+			"OnPlayerKilledOther"
+			{
+				"windows"	"279"
+			}
+			"CorpseGib"
+			{
+				"windows"	"281"
+			}
+			"ShouldGib"
+			{
+				"windows"	"285"
+			}
+			"OnKilledNPC"
+			{
+				"windows"	"286"
+			}
+			"Event_Gibbed"
+			{
+				"windows"	"287"
+			}
+			"Event_Dying"
+			{
+				"windows"	"288"
+			}
+			"BecomeRagdoll"
+			{
+				"windows"	"290"
+			}
+			"BecomeRagdollBoogie"
+			{
+				"windows"	"292"
+			}
+			"CheckTraceHullAttack_Vector"
+			{
+				"windows"	"293"
+			}
+			"CheckTraceHullAttack_Float"
+			{
+				"windows"	"294"
+			}
+			"IRelationType"
+			{
+				"windows"	"296"
+			}
+			"IRelationPriority"
+			{
+				"windows"	"297"
+			}
+			"IsInAVehicle"
+			{
+				"windows"	"298"
+			}
+			"GetVehicle"
+			{
+				"windows"	"299"
+			}
+			"GetVehicleEntity"
+			{
+				"windows"	"300"
+			}
+			"CalcWeaponProficiency"
+			{
+				"windows"	"303"
+			}
+			"GetAttackSpread"
+			{
+				"windows"	"304"
+			}
+			"GetSpreadBias"
+			{
+				"windows"	"305"
+			}
+			"DoMuzzleFlash"
+			{
+				"windows"	"306"
+			}
+			"AddEntityRelationship"
+			{
+				"windows"	"307"
+			}
+			"RemoveEntityRelationship"
+			{
+				"windows"	"308"
+			}
+			"AddClassRelationship"
+			{
+				"windows"	"309"
+			}
+			"OnChangeActiveWeapon"
+			{
+				"windows"	"310"
+			}
+			/* End CBaseCombatCharacter */
+			
+			
+			
+			/* CBasePlayer */
+			"PreThink"
+			{
+				"windows"	"331"
+			}
+			"PostThink"
+			{
+				"windows"	"332"
+			}
+			"FlashlightIsOn"
+			{
+				"windows"	"353"
+			}
+			"IsIlluminatedByFlashlight"
+			{
+				"windows"	"356"
+			}
+			"SetAnimation"
+			{
+				"windows"	"365"
+			}
+			"EntSelectSpawnPoint"
+			{
+				"windows"	"391"
+			}
+			"GetInVehicle"
+			{
+				"windows"	"392"
+			}
+			"LeaveVehicle"
+			{
+				"windows"	"393"
+			}
+			"BumpWeapon"
+			{
+				"windows"	"396"
+			}
+			"GiveNamedItem"
+			{
+				"windows"	"400"
+			}
+			"FindUseEntity"
+			{
+				"windows"	"406"
+			}
+			"IsUseableEntity"
+			{
+				"windows"	"407"
+			}
+			"PickupObject"
+			{
+				"windows"	"408"
+			}
+			"ForceDropOfCarriedPhysObjects"
+			{
+				"windows"	"409"
+			}
+			"GetAutoaimVector_Float"
+			{
+				"windows"	"414"
+			}
+			"PlayerRunCommand"
+			{
+				"windows"	"418"
+			}
+			"ModifyOrAppendPlayerCriteria"
+			{
+				"windows"	"422"
+			}
+			"CreateRagdollEntity"
+			{
+				"windows"	"424"
+			}
+			"IsFollowingPhysics"
+			{
+				"windows"	"426"
+			}
+			/* End CBasePlayer */
+			
+			
+			
+			/* CAI_BaseNPC */
+			"NPCInit"
+			{
+				"windows"	"320"
+			}
+			"PostNPCInit"
+			{
+				"windows"	"321"
+			}
+			"StartNPC"
+			{
+				"windows"	"322"
+			}
+			"CleanupOnDeath"
+			{
+				"windows"	"323"
+			}
+			"CreateComponents"
+			{
+				"windows"	"324"
+			}
+			"CreateSenses"
+			{
+				"windows"	"325"
+			}
+			"CreateMoveProbe"
+			{
+				"windows"	"326"
+			}
+			"CreateMotor"
+			{
+				"windows"	"327"
+			}
+			"CreateLocalNavigator"
+			{
+				"windows"	"328"
+			}
+			"CreateNavigator"
+			{
+				"windows"	"329"
+			}
+			"CreatePathfinder"
+			{
+				"windows"	"330"
+			}
+			"CreateTacticalServices"
+			{
+				"windows"	"331"
+			}
+			"NPCThink"
+			{
+				"windows"	"332"
+			}
+			"RunAI"
+			{
+				"windows"	"333"
+			}
+			"GatherConditions"
+			{
+				"windows"	"334"
+			}
+			"PrescheduleThink"
+			{
+				"windows"	"335"
+			}
+			"OnScheduleChange"
+			{
+				"windows"	"337"
+			}
+			"OnStartSchedule"
+			{
+				"windows"	"338"
+			}
+			"SelectSchedule"
+			{
+				"windows"	"339"
+			}
+			"SelectFailSchedule"
+			{
+				"windows"	"340"
+			}
+			"TranslateSchedule"
+			{
+				"windows"	"341"
+			}
+			"StartTask"
+			{
+				"windows"	"343"
+			}
+			"RunTask"
+			{
+				"windows"	"345"
+			}
+			"IsInterruptable"
+			{
+				"windows"	"346"
+			}
+			"OnStartScene"
+			{
+				"windows"	"347"
+			}
+			"ShouldPlayerAvoid"
+			{
+				"windows"	"348"
+			}
+			"ShouldAlwaysThink"
+			{
+				"windows"	"349"
+			}
+			"PostRunStopMoving"
+			{
+				"windows"	"351"
+			}
+			"GetSchedule"
+			{
+				"windows"	"354"
+			}
+			"GetGlobalScheduleId"
+			{
+				"windows"	"356"
+			}
+			"TaskFail"
+			{
+				"windows"	"357"
+			}
+			"TaskName"
+			{
+				"windows"	"358"
+			}
+			"GetSchedulingErrorName"
+			{
+				"windows"	"360"
+			}
+			"BuildScheduleTestBits"
+			{
+				"windows"	"362"
+			}
+			"GetNewSchedule"
+			{
+				"windows"	"363"
+			}
+			"GetFailSchedule"
+			{
+				"windows"	"364"
+			}
+			"CanFlinch"
+			{
+				"windows"	"365"
+			}
+			"CheckFlinches"
+			{
+				"windows"	"366"
+			}
+			"PlayFlinchGesture"
+			{
+				"windows"	"367"
+			}
+			"GetRunningBehavior"
+			{
+				"windows"	"370"
+			}
+			"ShouldAcceptGoal"
+			{
+				"windows"	"371"
+			}
+			"OnClearGoal"
+			{
+				"windows"	"371"
+			}
+			"OnBehaviorChangeStatus"
+			{
+				"windows"	"373"
+			}
+			"AccessBehaviors"
+			{
+				"windows"	"374"
+			}
+			"NumBehaviors"
+			{
+				"windows"	"375"
+			}
+			"SelectIdealState"
+			{
+				"windows"	"378"
+			}
+			"OnStateChange"
+			{
+				"windows"	"380"
+			}
+			"UpdateEfficiency"
+			{
+				"windows"	"381"
+			}
+			"Wake"
+			{
+				"windows"	"382"
+			}
+			"SetActivity"
+			{
+				"windows"	"383"
+			}
+			"IsActivityMovementPhased"
+			{
+				"windows"	"384"
+			}
+			"OnChangeActivity"
+			{
+				"windows"	"385"
+			}
+			"QueryHearSound"
+			{
+				"windows"	"386"
+			}
+			"QuerySeeEntity"
+			{
+				"windows"	"387"
+			}
+			"OnLooked"
+			{
+				"windows"	"388"
+			}
+			"OnListened"
+			{
+				"windows"	"389"
+			}
+			"OnSeeEntity"
+			{
+				"windows"	"390"
+			}
+			"ShouldNotDistanceCull"
+			{
+				"windows"	"391"
+			}
+			"GetSoundInterests"
+			{
+				"windows"	"392"
+			}
+			"GetBestSound"
+			{
+				"windows"	"394"
+			}
+			"GetBestScent"
+			{
+				"windows"	"395"
+			}
+			"HearingSensitivity"
+			{
+				"windows"	"396"
+			}
+			"ShouldIgnoreSound"
+			{
+				"windows"	"397"
+			}
+			"ClearSenseConditions"
+			{
+				"windows"	"398"
+			}
+			"BestEnemy"
+			{
+				"windows"	"399"
+			}
+			"IsValidEnemy"
+			{
+				"windows"	"400"
+			}
+			"CanBeAnEnemyOf"
+			{
+				"windows"	"401"
+			}
+			"ShouldChooseNewEnemy"
+			{
+				"windows"	"402"
+			}
+			"GatherEnemyConditions"
+			{
+				"windows"	"403"
+			}
+			"StartTargetHandling"
+			{
+				"windows"	"405"
+			}
+			"CreateCustomTarget"
+			{
+				"windows"	"406"
+			}
+			"AllowedToIgnite"
+			{
+				"windows"	"408"
+			}
+			"IsCommandable"
+			{
+				"windows"	"410"
+			}
+			"IsPlayerAlly"
+			{
+				"windows"	"411"
+			}
+			"IsMedic"
+			{
+				"windows"	"412"
+			}
+			"IsCommandMoving"
+			{
+				"windows"	"413"
+			}
+			"ShouldAutoSummon"
+			{
+				"windows"	"414"
+			}
+			"SetCommandGoal"
+			{
+				"windows"	"415"
+			}
+			"ClearCommandGoal"
+			{
+				"windows"	"416"
+			}
+			"OnMoveOrder"
+			{
+				"windows"	"418"
+			}
+			"IsValidCommandTarget"
+			{
+				"windows"	"419"
+			}
+			"OnMoveToCommandGoalFailed"
+			{
+				"windows"	"420"
+			}
+			"GetSquadCommandRepresentative"
+			{
+				"windows"	"421"
+			}
+			"TargetOrder"
+			{
+				"windows"	"422"
+			}
+			"MoveOrder"
+			{
+				"windows"	"423"
+			}
+			"CanBeUsedAsAFriend"
+			{
+				"windows"	"424"
+			}
+			"CanRunAScriptedNPCInteraction"
+			{
+				"windows"	"425"
+			}
+			"CanPlaySentence"
+			{
+				"windows"	"427"
+			}
+			"PlayScriptedSentence"
+			{
+				"windows"	"429"
+			}
+			"FOkToMakeSound"
+			{
+				"windows"	"430"
+			}
+			"JustMadeSound"
+			{
+				"windows"	"431"
+			}
+			"DeathSound"
+			{
+				"windows"	"432"
+			}
+			"AlertSound"
+			{
+				"windows"	"433"
+			}
+			"IdleSound"
+			{
+				"windows"	"434"
+			}
+			"PainSound"
+			{
+				"windows"	"435"
+			}
+			"FearSound"
+			{
+				"windows"	"436"
+			}
+			"LostEnemySound"
+			{
+				"windows"	"437"
+			}
+			"FoundEnemySound"
+			{
+				"windows"	"438"
+			}
+			"BarnacleDeathSound"
+			{
+				"windows"	"439"
+			}
+			"SpeakSentence"
+			{
+				"windows"	"440"
+			}
+			"ShouldPlayIdleSound"
+			{
+				"windows"	"441"
+			}
+			"MakeAIFootstepSound"
+			{
+				"windows"	"442"
+			}
+			"GetExpresser"
+			{
+				"windows"	"443"
+			}
+			"CanRespondToEvent"
+			{
+				"windows"	"444"
+			}
+			"RespondedTo"
+			{
+				"windows"	"445"
+			}
+			"PlayerHasIlluminatedNPC"
+			{
+				"windows"	"446"
+			}
+			"CapabilitiesGet"
+			{
+				"windows"	"447"
+			}
+			"IsNavigationUrgent"
+			{
+				"windows"	"448"
+			}
+			"ShouldFailNav"
+			{
+				"windows"	"449"
+			}
+			"ShouldBruteForceFailedNav"
+			{
+				"windows"	"450"
+			}
+			"GetTimeToNavGoal"
+			{
+				"windows"	"451"
+			}
+			"MovementCost"
+			{
+				"windows"	"452"
+			}
+			"CalcIdealYaw"
+			{
+				"windows"	"453"
+			}
+			"MaxYawSpeed"
+			{
+				"windows"	"454"
+			}
+			"AddFacingTarget_E_V_F_F_F"
+			{
+				"windows"	"455"
+			}
+			"AddFacingTarget_V_F_F_F"
+			{
+				"windows"	"456"
+			}
+			"AddFacingTarget_E_F_F_F"
+			{
+				"windows"	"457"
+			}
+			"IsJumpLegal"
+			{
+				"windows"	"459"
+			}
+			"StepHeight"
+			{
+				"windows"	"460"
+			}
+			"GetJumpGravity"
+			{
+				"windows"	"462"
+			}
+			"OverrideMove"
+			{
+				"windows"	"463"
+			}
+			"OverrideMoveFacing"
+			{
+				"windows"	"464"
+			}
+			"IsUnusableNode"
+			{
+				"windows"	"465"
+			}
+			"ValidateNavGoal"
+			{
+				"windows"	"466"
+			}
+			"IsCurTaskContinuousMove"
+			{
+				"windows"	"467"
+			}
+			"IsValidMoveAwayDest"
+			{
+				"windows"	"468"
+			}
+			"OnMovementFailed"
+			{
+				"windows"	"469"
+			}
+			"OnMovementComplete"
+			{
+				"windows"	"470"
+			}
+			"IsUnreachable"
+			{
+				"windows"	"471"
+			}
+			"OnObstructingDoor"
+			{
+				"windows"	"472"
+			}
+			"GetNodeViewOffset"
+			{
+				"windows"	"474"
+			}
+			"EyeOffset"
+			{
+				"windows"	"475"
+			}
+			"EyeLookTarget"
+			{
+				"windows"	"476"
+			}
+			"AddLookTarget_V"
+			{
+				"windows"	"477"
+			}
+			"AddLookTarget_E"
+			{
+				"windows"	"478"
+			}
+			"SetHeadDirection"
+			{
+				"windows"	"479"
+			}
+			"MaintainLookTargets"
+			{
+				"windows"	"480"
+			}
+			"ValidEyeTarget"
+			{
+				"windows"	"481"
+			}
+			"FacingPosition"
+			{
+				"windows"	"482"
+			}
+			"MaintainTurnActivity"
+			{
+				"windows"	"483"
+			}
+			"AimGun"
+			{
+				"windows"	"484"
+			}
+			"SetAim"
+			{
+				"windows"	"485"
+			}
+			"RelaxAim"
+			{
+				"windows"	"486"
+			}
+			"GetAlternateMoveShootTarget"
+			{
+				"windows"	"487"
+			}
+			"InputOutsideTransition"
+			{
+				"windows"	"488"
+			}
+			"InputInsideTransition"
+			{
+				"windows"	"489"
+			}
+			"SetScriptedScheduleIgnoreConditions"
+			{
+				"windows"	"490"
+			}
+			"ScheduledMoveToGoalEntity"
+			{
+				"windows"	"491"
+			}
+			"ScheduledFollowPath"
+			{
+				"windows"	"492"
+			}
+			"GetEnemies"
+			{
+				"windows"	"493"
+			}
+			"UpdateEnemyMemory"
+			{
+				"windows"	"495"
+			}
+			"GetReactionDelay"
+			{
+				"windows"	"496"
+			}
+			"CanHolsterWeapon"
+			{
+				"windows"	"497"
+			}
+			"HolsterWeapon"
+			{
+				"windows"	"498"
+			}
+			"UnholsterWeapon"
+			{
+				"windows"	"499"
+			}
+			"OnRangeAttack1"
+			{
+				"windows"	"500"
+			}
+			"OnUpdateShotRegulator"
+			{
+				"windows"	"501"
+			}
+			"SquadSlotName"
+			{
+				"windows"	"503"
+			}
+			"SetSquad"
+			{
+				"windows"	"504"
+			}
+			"IsSilentSquadMember"
+			{
+				"windows"	"505"
+			}
+			"FindCoverPos_Entity"
+			{
+				"windows"	"507"
+			}
+			"FindCoverPos_Sound"
+			{
+				"windows"	"506"
+			}
+			"FindCoverPosInRadius"
+			{
+				"windows"	"508"
+			}
+			"IsValidCover"
+			{
+				"windows"	"509"
+			}
+			"IsValidShootPosition"
+			{
+				"windows"	"510"
+			}
+			"TestShootPosition"
+			{
+				"windows"	"511"
+			}
+			"IsCoverPosition"
+			{
+				"windows"	"512"
+			}
+			"CoverRadius"
+			{
+				"windows"	"513"
+			}
+			"GetMaxTacticalLateralMovement"
+			{
+				"windows"	"514"
+			}
+			"OnChangeHintGroup"
+			{
+				"windows"	"515"
+			}
+			"RangeAttack1Conditions"
+			{
+				"windows"	"517"
+			}
+			"RangeAttack2Conditions"
+			{
+				"windows"	"518"
+			}
+			"MeleeAttack1Conditions"
+			{
+				"windows"	"519"
+			}
+			"InnateRange1MinRange"
+			{
+				"windows"	"521"
+			}
+			"InnateRange1MaxRange"
+			{
+				"windows"	"522"
+			}
+			"OnBeginMoveAndShoot"
+			{
+				"windows"	"523"
+			}
+			"OnEndMoveAndShoot"
+			{
+				"windows"	"524"
+			}
+			"UseAttackSquadSlots"
+			{
+				"windows"	"525"
+			}
+			"FindNamedEntity"
+			{
+				"windows"	"526"
+			}
+			"ClearAttackConditions"
+			{
+				"windows"	"527"
+			}
+			"ShouldLookForBetterWeapon"
+			{
+				"windows"	"528"
+			}
+			"GiveWeapon"
+			{
+				"windows"	"529"
+			}
+			"OnGivenWeapon"
+			{
+				"windows"	"530"
+			}
+			"WeaponLOSCondition"
+			{
+				"windows"	"531"
+			}
+			"CurrentWeaponLOSCondition"
+			{
+				"windows"	"532"
+			}
+			"IsWaitingToRappel"
+			{
+				"windows"	"533"
+			}
+			"BeginRappel"
+			{
+				"windows"	"534"
+			}
+			"TranslateNavGoal"
+			{
+				"windows"	"535"
+			}
+			"GetDefaultNavGoalTolerance"
+			{
+				"windows"	"536"
+			}
+			"FCanCheckAttacks"
+			{
+				"windows"	"537"
+			}
+			"CheckAmmo"
+			{
+				"windows"	"538"
+			}
+			"FValidateHintType"
+			{
+				"windows"	"539"
+			}
+			"GetHintActivity"
+			{
+				"windows"	"540"
+			}
+			"GetHintDelay"
+			{
+				"windows"	"541"
+			}
+			"GetCoverActivity"
+			{
+				"windows"	"542"
+			}
+			"SetTurnActivity"
+			{
+				"windows"	"544"
+			}
+			"GetHitgroupDamageMultiplier"
+			{
+				"windows"	"545"
+			}
+			"PlayerInSpread"
+			{
+				"windows"	"546"
+			}
+			"InnateWeaponLOSCondition"
+			{
+				"windows"	"547"
+			}
+			"GetFlinchActivity"
+			{
+				"windows"	"548"
+			}
+			"GetShootEnemyDir"
+			{
+				"windows"	"549"
+			}
+			"CollectShotStats"
+			{
+				"windows"	"550"
+			}
+			"ShouldMoveAndShoot"
+			{
+				"windows"	"551"
+			}
+			"IsLightDamage"
+			{
+				"windows"	"552"
+			}
+			"IsHeavyDamage"
+			{
+				"windows"	"553"
+			}
+			"PickupWeapon"
+			{
+				"windows"	"554"
+			}
+			"PickupItem"
+			{
+				"windows"	"555"
+			}
+			"NotifyDeadFriend"
+			{
+				"windows"	"556"
+			}
+			"IsValidReasonableFacing"
+			{
+				"windows"	"558"
+			}
+			"GetReasonableFacingDist"
+			{
+				"windows"	"559"
+			}
+			"GetClassScheduleIdSpace"
+			{
+				"windows"	"560"
+			}
+			"GetSquadSlotDebugName"
+			{
+				"windows"	"561"
+			}
+			"IsCrouching"
+			{
+				"windows"	"562"
+			}
+			"Crouch"
+			{
+				"windows"	"563"
+			}
+			"Stand"
+			{
+				"windows"	"564"
+			}
+			"DesireCrouch"
+			{
+				"windows"	"565"
+			}
+			"IsCrouchedActivity"
+			{
+				"windows"	"566"
+			}
+			"ShouldProbeCollideAgainstEntity"
+			{
+				"windows"	"571"
+			}
+			"CalcYawSpeed"
+			{
+				"windows"	"0"
+			}
+			"OnCalcBaseMove"
+			{
+				"windows"	"1"
+			}
+			"OnObstructionPreSteer"
+			{
+				"windows"	"2"
+			}
+			"OnFailedSteer"
+			{
+				"windows"	"3"
+			}
+			"OnFailedLocalNavigation"
+			{
+				"windows"	"4"
+			}
+			"OnInsufficientStopDist"
+			{
+				"windows"	"5"
+			}
+			"OnMoveBlocked"
+			{
+				"windows"	"6"
+			}
+			"OnMoveExecuteFailed"
+			{
+				"windows"	"8"
+			}
+			/* End CAI_BaseNPC */
+
+
+			
+			/* CBaseFlex */
+			"SetViewtarget"
+			{
+				"windows"	"215"
+			}
+			"StartSceneEvent"
+			{
+				"windows"	"216"
+			}
+			"ProcessSceneEvents"
+			{
+				"windows"	"217"
+			}
+			"ProcessSceneEvent"
+			{
+				"windows"	"218"
+			}
+			"ClearSceneEvent"
+			{
+				"windows"	"219"
+			}
+			"CheckSceneEventCompletion"
+			{
+				"windows"	"220"
+			}
+			"PlayScene"
+			{
+				"windows"	"221"
+			}
+			"PlayAutoGeneratedSoundScene"
+			{
+				"windows"	"222"
+			}
+			/* End CBaseFlex */
+			
+			
+			
+			/* CBasePropDoor */
+			"GetOpenInterval"
+			{
+				"windows"	"222"
+			}
+			
+			
+			
+			/* CBaseCombatWeapon */
+			"Equip"
+			{
+				"windows"	"218"
+			}
+			"Drop"
+			{
+				"windows"	"219"
+			}
+			"SendWeaponAnim"
+			{
+				"windows"	"235"
+			}
+			"HasAnyAmmo"
+			{
+				"windows"	"241"
+			}
+			"HasPrimaryAmmo"
+			{
+				"windows"	"242"
+			}
+			"HasSecondaryAmmo"
+			{
+				"windows"	"243"
+			}
+			"CanHolster"
+			{
+				"windows"	"244"
+			}
+			"Deploy"
+			{
+				"windows"	"247"
+			}
+			"Holster"
+			{
+				"windows"	"248"
+			}
+			"ItemPreFrame"
+			{
+				"windows"	"257"
+			}
+			"ItemPostFrame"
+			{
+				"windows"	"258"
+			}
+			"WeaponIdle"
+			{
+				"windows"	"261"
+			}
+			"PrimaryAttack"
+			{
+				"windows"	"272"
+			}
+			"SecondaryAttack"
+			{
+				"windows"	"273"
+			}
+			"GetPrimaryAttackActivity"
+			{
+				"windows"	"274"
+			}
+			"GetSecondaryAttackActivity"
+			{
+				"windows"	"275"
+			}
+			"GetBulletSpread"
+			{
+				"windows"	"280"
+			}
+			"GetFireRate"
+			{
+				"windows"	"282"
+			}
+			"GetMinBurst"
+			{
+				"windows"	"283"
+			}
+			"GetMaxBurst"
+			{
+				"windows"	"284"
+			}
+			"GetMinRestTime"
+			{
+				"windows"	"285"
+			}
+			"GetMaxRestTime"
+			{
+				"windows"	"286"
+			}
+			"GetRandomBurst"
+			{
+				"windows"	"287"
+			}
+			"WeaponSound"
+			{
+				"windows"	"288"
+			}
+			"GetProficiencyValues"
+			{
+				"windows"	"290"
+			}
+			"Weapon_SetActivity"
+			{
+				"windows"	"296"
+			}
+			"CanBePickedUpByNPCs"
+			{
+				"windows"	"305"
+			}
+			"GetViewModel"
+			{
+				"windows"	"307"
+			}
+			"GetWorldModel"
+			{
+				"windows"	"308"
+			}
+			"GetMaxClip1"
+			{
+				"windows"	"310"
+			}
+			"GetMaxClip2"
+			{
+				"windows"	"311"
+			}
+			"GetSlot"
+			{
+				"windows"	"318"
+			}
+			"UsesClipsForAmmo1"
+			{
+				"windows"	"324"
+			}
+			"UsesClipsForAmmo2"
+			{
+				"windows"	"325"
+			}
+			"ActivityOverride"
+			{
+				"windows"	"339"
+			}
+			"ActivityList"
+			{
+				"windows"	"340"
+			}
+			"ActivityListCount"
+			{
+				"windows"	"341"
+			}
+			"Weapon_CapabilitiesGet"
+			{
+				"windows"	"349"
+			}
+			"WeaponRangeAttack1Condition"
+			{
+				"windows"	"351"
+			}
+			"WeaponRangeAttack2Condition"
+			{
+				"windows"	"352"
+			}
+			"WeaponMeleeAttack1Condition"
+			{
+				"windows"	"353"
+			}
+			"WeaponMeleeAttack2Condition"
+			{
+				"windows"	"354"
+			}
+			"Operator_HandleAnimEvent"
+			{
+				"windows"	"356"
+			}
+			"Operator_ForceNPCFire"
+			{
+				"windows"	"357"
+			}
+			/* End CBaseCombatWeapon */
+
+
+
+			/* CAI_GoalEntity */
+			"InputActivate"
+			{
+				"windows"	"187"
+			}
+			"InputUpdateActors"
+			{
+				"windows"	"188"
+			}
+			"InputDeactivate"
+			{
+				"windows"	"189"
+			}
+			"EnableGoal"
+			{
+				"windows"	"190"
+			}
+			"DisableGoal"
+			{
+				"windows"	"191"
+			}
+
+			
+			/* CBaseTrigger */
+			"PassesTriggerFilters"
+			{
+				"windows"	"195"
+			}
+			
+
+
+			/* CRotorWashShooter */
+			"DoWashPush"
+			{
+				"windows"	"0"
+			}
+
+
+			
+			/* CBaseFilter */
+			"PassesFilterImpl"
+			{
+				"windows"	"187"
+			}
+
+
+
+			/* CBaseProp */
+			"OverridePropdata"
+			{
+				"windows"	"215"
+			}
+
+
+
+			/* CPropVehicleDriveable */
+			"DriveVehicle"
+			{
+				"windows"	"221"
+			}
+			"DampenEyePosition"
+			{
+				"windows"	"216"
+			}
+			"IsOverturned"
+			{
+				"windows"	"222"
+			}
+			"IsVehicleBodyInWater"
+			{
+				"windows"	"223"
+			}
+			"CreateServerVehicle"
+			{
+				"windows"	"219"
+			}
+
+
+			/* IDrivableVehicle */
+			"GetDriver"
+			{
+				"windows"	"0"
+			}
+			"SetupMove"
+			{
+				"windows"	"2"
+			}
+			"ProcessMovement"
+			{
+				"windows"	"3"
+			}
+			"CanExitVehicle"
+			{
+				"windows"	"6"
+			}
+			"EnterVehicle"
+			{
+				"windows"	"9"
+			}
+			"ExitVehicle"
+			{
+				"windows"	"11"
+			}
+			"AllowBlockedExit"
+			{
+				"windows"	"12"
+			}
+			"PassengerShouldReceiveDamage"
+			{
+				"windows"	"15"
+			}
+
+
+
+			/* CBaseCSGrenade */
+			"EmitGrenade"
+			{
+				"windows"	"385"
+			}
+
+
+
+
+			/* Variables Offset! */
+			"m_nTargetNodeID" // "Node is visible to player"
+			{
+				"windows"	"880"
+			}
+			"m_pNetwork" // ****** MAP CONTAINS DUPLICATE HAMMER NODE IDS! CHECK FOR PROBLEM
+			{
+				"windows"	"832"
+			}
+			
+
+			/* CBaseEntity */
+			"m_pLink"	// 55 8B EC 51 53 8B ? ? 56 57 8B ? ? 6A 00
+			{
+				"windows"	"212"
+			}
+
+			
+			/* CBaseFlex */
+			"m_LocalToGlobal"	// Unable to find mapping for flexcontroller %i, settings %p on %i/
+			{
+				"windows"	"1560"
+			}
+
+			/* CSceneEntity */
+			"m_pRecipientFilter"	// snd_mixahead
+			{
+				"windows"	"1544"
+			}
+			"m_pScene"
+			{
+				"windows"	"1000"
+			}
+
+
+
+
+			/* BaseNPC */
+			"m_Conditions"
+			{
+				"windows"	"2156"
+			}
+			"m_pSchedule"	// "Schedule cleared: %s\"
+			{
+				"windows"	"2088"
+			}
+			"m_pSquad" // "Found %s that isn't in a squad\n"
+			{
+				"windows"	"2744"
+			}
+			"m_CustomInterruptConditions"
+			{
+				"windows"	"2188"
+			}
+			"m_poseMove_Yaw" // move_yaw
+			{
+				"windows"	"2152"
+			}
+			"m_InverseIgnoreConditions"
+			{
+				"windows"	"2252"
+			}
+			"m_poseAim_Pitch"
+			{
+				"windows"	"2144"
+			}
+			"m_poseAim_Yaw"
+			{
+				"windows"	"2148"
+			}
+			"m_ConditionsPreIgnore"
+			{
+				"windows"	"2220"
+			}
+			"m_bInChoreo"
+			{
+				"windows"	"2140"
+			}
+
+
+
+			/* CSkyCamera */
+			"m_skyboxData"
+			{
+				"windows"	"824"
+			}
+
+
+
+			/* CRagdollProp */
+			"m_ragdoll"
+			{
+				"windows"	"1124"
+			}
+
+
+
+
+			/* CGib */
+			"m_lifeTime"
+			{
+				"windows"	"1132"
+			}
+			"m_bForceRemove"
+			{
+				"windows"	"1136"
+			}
+			"m_material"
+			{
+				"windows"	"1128"
+			}
+			"m_cBloodDecals"
+			{
+				"windows"	"1124"
+			}
+			"m_bloodColor"
+			{
+				"windows"	"1148"
+			}
+
+
+
+			/* CPathTrack */
+			"m_nIterVal"
+			{
+				"windows"	"848"
+			}
+
+
+
+			/* Global Variables */
+			"g_EntityCollisionHash"
+			{
+				"windows"	"978"
+			}
+			"g_WorldEntity"
+			{
+				"windows"	"28"
+			}
+			"g_vecAttackDir"
+			{
+				"windows"	"161"
+			}
+			"m_DefaultRelationship"
+			{
+				"windows"	"13"
+			}
+			"m_lastInteraction"
+			{
+				"windows"	"1"
+			}
+			"g_SoundController"
+			{
+				"windows"	"1"
+			}
+			"decalsystem"
+			{
+				"windows"	"5"
+			}
+			"m_pActivitySR"
+			{
+				"windows"	"5"
+			}
+			"m_iNumActivities"
+			{
+				"windows"	"38"
+			}
+			"m_pEventSR"
+			{
+				"windows"	"100"
+			}
+			"m_iNumEvents"
+			{
+				"windows"	"8"
+			}
+			"g_pPredictionSystems"
+			{
+				"windows"	"4"
+			}
+			"g_AI_SensedObjectsManager"
+			{
+				"windows"	"1"
+			}
+			"my_g_MultiDamage"
+			{
+				"windows"	"255"
+			}
+			"g_Templates"
+			{
+				"windows"	"154"
+			}
+			"g_EntityListPool"
+			{
+				"windows"	"115"
+			}
+			"g_CEventQueue"
+			{
+				"windows"	"126"
+			}
+			"g_PostSimulationQueue"
+			{
+				"windows"	"10"
+			}
+			"EventQueuePrioritizedEvent_t_s_Allocator"
+			{
+				"windows"	"17"
+			}
+			"g_TouchTrace"
+			{
+				"windows"	"11"
+			}
+			"gm_AllHints"
+			{
+				"windows"	"14"
+			}
+			"s_GameSystems"
+			{
+				"windows"	"32"
+			}
+			"AI_Waypoint_t_s_Allocator"
+			{
+				"windows"	"743"
+			}
+			"g_AIFriendliesTalkSemaphore"
+			{
+				"windows"	"69"
+			}
+			"g_AIFoesTalkSemaphore"
+			{
+				"windows"	"74"
+			}
+			"g_pNotify"
+			{
+				"windows"	"629"
+			}
+			"gm_TypedHints"
+			{
+				"windows"	"87"
+			}
+			"s_pSymbolTable"
+			{
+				"windows"	"16"
+			}
+			"g_interactionHitByPlayerThrownPhysObj"
+			{
+				"windows"	"663"
+			}
+			"g_AI_SquadManager"
+			{
+				"windows"	"121"
+			}
+			"g_PhysWorldObject"
+			{
+				"windows"	"664"
+			}
+			"g_Collisions"
+			{
+				"windows"	"128"
+			}
+			"sm_pSingleton"
+			{
+				"windows"	"2"
+			}
+			"g_interactionScriptedTarget"
+			{
+				"windows"	"2"
+			}
+			"s_nCurrIterVal"
+			{
+				"windows"	"2"
+			}
+			"s_bIsIterating"
+			{
+				"windows"	"8"
+			}
+		}
+	}
+	"#default"
+	{
+		"Signatures"
+		{
+			"SwitchTeam" //
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x89\x4D\x2A\x8B\x45\x2A\x50\xE8\x2A\x2A\x2A\x2A\x83\xC4\x04\x85\xC0\x74"
+			}
+			"RoundRespawn"  //
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x51\x89\x2A\x2A\x8B\x2A\x2A\x8B\x10\x8B"
+			}
+			"FindEntityByClassname"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x56\x57\x8B\xF9\x8B\x4D\x08\x85\xC9\x74\x15"
+			}
+			"FindEntityByName" // "InputForgetEntity does not support wild"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x8B\x2A\x2A\x56\x8B\x2A\x85\x2A\x74\x2A\x8A"
+			}
+			"FireOutput"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x2A\x2A\x2A\x2A\x53\x8B\xC1"
+			}
+			"PhysIsInCallback"
+			{
+				"library"	"server"
+				"windows"	"\x8B\x0D\x2A\x2A\x2A\x2A\x85\x2A\x74\x2A\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\xFF\x2A\x84\x2A\x75\x2A\x83\x2A\x2A\x2A\x2A\x2A\x2A\x7E\x2A\xB0\x2A\xC3"
+			}
+			"CreateGameRulesObject" //
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x0D\x2A\x2A\x2A\x2A\x85\xC9\x74\x07"
+			}
+			"SetNextThink"		// "host_timescale"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xF3\x0F\x2A\x2A\x2A\x0F\x2E\x2A\x2A\x2A\x2A\x2A\x53"
+			}
+			"SetHullSizeNormal"	// "models/player/ct_urban.mdl"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x56\x8B\xF1\x80\x2A\x2A\x2A\x2A\x00\x00\x75\x0A"
+			}
+			"SimThink_EntityChanged" // "Inserted %s with no model\n" down, red arrow func
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xFF\x2A\x2A\xB9\xE0\x2A\x2A\x2A\xE8"
+			}
+			"SetSolid"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x53\x56\x8B\xF1\x8A\x2A\x2A\x0F\x2A\x2A\x8D"
+			}
+			"SetSolidFlags"		// "SetIdealActivity : %s: %s -> %s"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x51\x8B\x2A\x2A\x53\x56\x57\x8B\x2A\x0F"
+			}
+			"ReportEntityFlagsChanged" // "notarget OFF" -> ToggleFlag()
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\x2A\x2A\xF6\x2A\x2A\x2A\x2A\x2A\x01\x75\x44"
+			}
+			"SetState" // CAI_BaseNPC "Stripped\n push 1 push 0
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x56\x8B\xF1\x57\x8B\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x00\x3B"
+			}
+			"DispatchUpdateTransmitState" // "%s put to sleep while in Scripted stat" -> AddEffect()
+			{
+				"library"	"server"
+				"windows"	"\x80\x2A\x2A\x2A\x2A\x00\x00\x8B\x41\x18\x74\x0A\x85\xC0\x74\x03\x8B\x00\xC3\x33\xC0\xC3"
+			}
+			"SetSchedule_Int" // %s put to sleep while in Scripted state
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x56\xFF\x2A\x2A\x8B\x2A\xE8"
+			}
+			"CAI_BaseNPC::Precache" // "player_squad" & "0"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x51\x56\x8D\x2A\x2A\x8B\x2A\x68\x2A\x2A\x2A\x2A\x50\xE8\x2A\x2A\x2A\x2A\x83\x2A\x2A\x8B\x2A\xA3\x2A\x2A\x2A\x2A\x80"
+			}
+			"SetLocalOrigin" // "Bad SetLocalOrigin(%f,%f,%f) on %s\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xF3\x0F\x10\x2A\xAC\x2A\x2A\x2A\x83\xEC"
+			}
+			"PhysicsTouchTriggers" // "inserted %s with no model"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x56\x57\x8B\xF9\x8B\x77\x2A\x89\x2A\x2A\x85\xF6"
+			}
+			"SetGroundEntity" // "NPC %s stuck in wall--level design err"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x57\x8B\xF9\x8B\x2A\x2A\x2A\x2A\x2A\x83\xFA\xFF\x74\x1E"
+			}
+			"SetAbsVelocity" // "nhandled input: (%s) -> (%s,%"  down 3 function
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x53\x56\x8B\x2A\x2A\x8B\xD9\xF3\x2A\x2A\x2A\x0F"
+			}
+			"AutoMovement" // "CAI_BasePhysicsFlyingBot"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x0F\x57\xC0\x83\x2A\x2A\x0F"
+			}
+			"EndTaskOverlay"	// "TaskFail -> %s\n"
+			{
+				"library"	"server"
+				"windows"	"\x81\xC1\xDC\x0A\x00\x00\xE9\x2A\x2A\x2A\x2A"
+			}
+			"SetIdealActivity"	// "SetIdealActivity : %s: %s -> %s\"  test    edi, edi
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x8B\x2A\x8B\x2A\x2A\x83\xF9\x02\x0F\x2A\x2A\x2A\x2A\x2A\xA1"
+			}
+			"TakeDamage"	// "CBaseEntity::TakeDamage:  with inputInfo.GetDamageForce() == v"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x57\x8B\xF9\x8B\x0D\x2A\x2A\x2A\x2A\x85\xC9\x0F\x2A\x2A\x2A\x2A\x2A\x8B\x01\x56\x8B"
+			}
+			"SetAbsAngles"  // "allangles"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x70\x53\x56\x8B\xF1\xE8"
+			}
+			"StudioFrameAdvanceManual"	// "m_fBoneCacheFlags" down function
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x51\x56\x8B\xF1\x80\x2A\x2A\x2A\x2A\x2A\x2A\x0F\x2A\x2A\x2A\x2A\x2A\x83\x2A\x2A\x2A\x2A\x2A\x2A\x75\x10\xE8\x2A\x2A\x2A\x2A\x85\x2A\x74\x2A\x8B\x2A\xE8\x2A\x2A\x2A\x2A\x57"
+			}
+			"Dissolve"	// "ragdoll_dissolved"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x80\x2A\x2A\x00\x56\x57\x8B\xF1\x74\x14"
+			}
+			"SetAbsOrigin"	// "ai_hint"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x40\x56\x57\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x8B\x7D\x2A\xF3"
+			}
+			"SelectWeightedSequence"	// "SelectWeightedSequence" bellow 1
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\x75\x2A\x85\xF6\x75\x05\x33\xC0\x5E\x5D\xC3\x8B\xCE\xE8\x2A\x2A\x2A\x2A\x84\xC0\x74\xF0\x8B\xCE\xE8"
+			}
+			"SetLocalAngles"    //	"Bad SetLocalAngles(%f,%f,%f) on %s\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xF3\x0F\x10\x2A\xB0\x2A\x2A\x2A\x83\xEC"
+			}
+			"CBaseCombatCharacter::OnTakeDamage"	// "%f: Player %s at [%0.2f %0.2f %0.2f] t"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x57\x8B\xF9\x80\x2A\x2A\x2A\x2A\x2A\x00\x75\x09"
+			}
+			"ActivityList_RegisterPrivateActivity"	// unuse??  "**\nShared<->Private Activity collisio"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xFF\x75\x2A\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x85\xC0\x78\x27"
+			}
+			"EventList_RegisterPrivateEvent"	// "***\nShared<->Private Event collision!\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xFF\x75\x2A\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x85\xC0\x78\x29"
+			}
+			"GetActivityID"	// "entry_activity"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x0D\x2A\x2A\x2A\x2A\x85\xC9\x75\x05"
+			}
+			"ShouldBrushBeIgnored"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x55\x2A\x8B\x42\x2A\x3B\x2A\x2A\x2A\x2A\x2A\x75"
+			}
+			"NPCPhysics_CreateSolver" 		// "physics_npc_solver"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x6A\x00\x68\x2A\x2A\x2A\x2A\x68\x2A\x2A\x2A\x2A\x68\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x83\x2A\x2A\x8B\x2A\x85\x2A\x74\x2A\x8B\x2A\xFF\x2A\x2A\x8B\x2A\x89\x86\x40"
+			}
+			"PrecacheScriptSound"		// "PrecacheScriptSound '%s' failed, no su"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x8B\xD9\x8B\x0D\x2A\x2A\x2A\x2A\x56\x8B\x75\x2A\x57\x8B\x2A\x56\xFF\x2A\x2A\x8B\x0D\x2A\x2A\x2A\x2A\x8B\x2A\x57\x8B\x2A\x8B\x2A\x2A\xFF\x2A\x84\x2A\x0F"
+			}
+			"EmitSound_char_float_pfloat"			// "UTIL_EmitAmbientSound:  Sentence emitte" , EmitSound( const char *soundname, float soundtime = 0.0f, float *duration = NULL ); down function
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x53\x57"
+			}
+			"EmitSound_filter_int_char_vector_float_pfloat" // "GenericNPC.GunSound"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x83\x2A\x2A\x2A\x0F\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x56\x57"
+			}
+			"EmitSound_filter_int_struct" 	// "EmitSound:  Raw wave emitted '%s' (ent" down func
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x53\x56\x57\x33\xF6\x33\xFF\x89\x2A\x2A\x89\x2A\x2A\x8B\x2A\x2A\x85\x2A\x74\x2A\x68\x2A\x2A\x2A\x2A\x68\x2A\x2A\x2A\x2A\x68\x2A\x2A\x2A\x2A\x68\x2A\x2A\x2A\x2A\x68\xDD"
+			}
+			"EmitSoundByHandle"	// "EmitSound:  Raw wave emitted '%s' (ent" last call
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\x2A\x2A\x2A\x2A\x00\x53\x8B\x2A\xC7\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B"
+			}
+			"HaveSequenceForActivity"    // "Schedule cleared: %s\n" above function  eax, 17h call
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x57\x8B\x2A\x80\x2A\x2A\x2A\x2A\x2A\x2A\x75"
+			}
+			"MoveLimit"		// "CAI_StandoffGoal"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\x2A\x2A\x2A\x2A\x2A\x53\x56\x57\x6A\x2A\x8D"
+			}
+			"SetEnemy"	// "InputForgetEntity does not support wild"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x56\x8B\x2A\x57\x8B\x2A\x2A\x2A\x2A\x2A\x83\x2A\x2A\x74"
+			}
+			"GetModelPtr" // "Achievements disabled: Steam not runnin" top purple text "ecx, ds:g_VProfCurrentProfile" above function
+			{
+				"library"	"server"
+				"windows"	"\x56\x8B\xF1\x80\xBE\x2A\x2A\x00\x00\x00\x75\x2A\x83\xBE\x2A\x2A\x00\x00\x00\x75\x2A\xE8\x2A\x2A\x2A\x2A\x85\x2A\x74\x2A\x8B\x2A\xE8\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x85\x2A\x74\x2A\x83\x2A\x00\x75\x2A\x33\x2A\x5E\xC3"
+			}
+			"GetBoneCache" // "CBaseAnimating::SetupBones" ___RTDynamicCast
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xB8\x2A\x2A\x00\x00\xE8\x2A\x2A\x2A\x2A\x53\x56\x8B\x2A\x57\x80\xBE\x2A\x2A\x00\x00\x00\x75"
+			}
+			"InvalidateBoneCache" // "ValveBiped.Weapon_bone"
+			{
+				"library"	"server"
+				"windows"	"\xFF\xB1\x2A\x2A\x00\x00\xE8\x2A\x2A\x2A\x2A\x59\xC3"
+			}
+			"SetupVPhysicsHull"   // SetHullSizeNorma -> SetupVPhysicsHull ".AIN File will be updated\"
+			{
+				"library"	"server"
+				"windows"	"\x53\x8B\xD9\x8A\x2A\x2A\x2A\x00\x00\x3C\x06\x0F\x2A\x2A\x2A\x00\x00\x84\xC0\x0F"
+			}
+			"AddGesture"	// "CBaseAnimatingOverlay::AddGesture:  mod"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x8B\x5D\x2A\x57\x53\x8B\x2A\xE8\x2A\x2A\x2A\x2A\x8B\x2A\x83"
+			}
+			"AllocateDefaultRelationships"  //  "gordon_precriminal"
+			{
+				"library"	"server"
+				"windows"	"\x83\x2A\x2A\x2A\x2A\x2A\x00\x75\x2A\x56\x6A\x2A\xE8\x2A\x2A\x2A\x2A\x83"
+			}
+			"CAI_HintManager::FindHint" //  CAI_Hint *CAI_HintManager::FindHint( CAI_NPC *pNPC, const Vector &position, const CHintCriteria &hintCriteria ) "Can't find goal entity %s\nCan't execu"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x8B\x2A\x2A\x8B\x2A\x2A\x89\x2A\x2A\x85"
+			}
+			"CAI_HintManager::FindHintRandom" // "Start TASK_STOP_MOVING"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x56\x57\x8D\x2A\x2A\xC7\x2A\x2A\x2A\x2A\x2A\x2A\x50\xFF"
+			}
+			"CreateRagGib"	// "**Can't create ragdoll gib!"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x57\x6A\xFF\x68\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x83\x2A\x2A\x8B\x2A\x8B"
+			}
+			"CBaseEntity::Use"	// "BulletProof" down 1 
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x00\x85\x2A\x74\x2A\xD9"
+			}
+			"CBaseEntity::FVisible_Entity"
+			{
+				"library"	"server"
+				"windows"	"\x53\x8B\xDC\x83\xEC\x2A\x83\x2A\x2A\x83\x2A\x2A\x55\x8B\x2A\x2A\x89\x2A\x2A\x2A\x8B\x2A\x81\x2A\x2A\x2A\x2A\x00\x56\x8B\x2A\x2A\x57\x8B\x2A\x89\x2A\x2A\xF7"
+			}
+			"AddStepDiscontinuity" // "AnimTimeMustBeFirst"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\xF1\x80\x2A\x2A\x2A\x2A\x2A\x03"
+			}
+			"VerifySequenceIndex"	// "Bad sequence in GetSequenceActivityName"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\x2A\x2A\x85\xF6\x74\x18\x8B\xCE\xE8"
+			}
+			"DispatchEffect" // "GlassImpact"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x56\x8D\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x8D\x2A\x2A\x56\xC7\x2A\x2A\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x8B"
+			}
+			"CineCleanup" // "Script failed for %s\n" "NO retn 4"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x53\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x56\x57\x8B\x2A\x2A\x2A\x2A\x00\x83"
+			}
+			"CalcAbsolutePosition" // "WARNING: %s(%s) has no eye offset"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x56\x8B\xF1\x8B\x2A\x2A\x2A\x00\x00\x8B\xC1"
+			}
+			"GetAmmoDef"	// "ammo_50AE_max"
+			{
+				"library"	"server"
+				"windows"	"\x80\x2A\x2A\x2A\x2A\x2A\x00\x0F\x2A\x2A\x2A\x00\x00\xD9\x2A\x2A\x2A\x2A\x2A\x6A\x2A\x6A\x2A\x6A\x00"
+			}
+			"CreateNoSpawn"	// "physics_entity_solver"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x6A\x2A\xFF\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x8B\xF0\x83\x2A\x2A\x85\xF6\x75\x03"
+			}
+			"CBaseEntityList::RemoveEntity"  // "CBaseEntityList::AddNonNetworkableEntit"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x25\x2A\x2A\x2A\x2A\x50"
+			}
+			"SetMinMaxSize" //  "s: backwards mins/m"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x33\x2A\x56\x8B\x2A\x2A\x8B\x2A\x2B"
+			}
+			"VPhysicsInitShadow" // "SetParent on static object, all constra"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x56\x8B\xF1\x83\x2A\x2A\x2A\x0F\x2A\x2A\x2A\x2A\x00\xF6"
+			}
+			"VPhysicsInitNormal" // "Overwriting physics object for %s\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x8B\xD9\x83\x2A\x2A\x2A\x0F\x2A\x2A\x2A\x2A\x00\xF6"
+			}
+			"UTIL_BloodDrips"   // "ERROR: Undefined ammo type!\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x57\x8B\x2A\x2A\x83\x2A\x2A\x0F\x2A\x2A\x2A\x2A\x00\xA1"
+			}
+			"CalculateDefaultPhysicsDamage"		// "Failed to find custom physics damage ta"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x53\x56\x85\x2A\x74\x52\x33\xF6"
+			}
+			"PhysCallbackDamage"	// "Warning: Physics damage event with no r"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x0D\x2A\x2A\x2A\x2A\x85\xC9\x74\x0E\x8B\x01\x8B\x2A\x2A\x2A\x00\x00\xFF\x2A\x84\xC0\x75\x0D\x83"
+			}
+			"PhysicsMarkEntitiesAsTouching" // "pushing entity (%s) that has parent (%s" this func -> last call -> call
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\x2A\x2A\x57\x8B\x2A\xB9\x2A\x2A\x2A\x2A\x56\xE8\x1B"
+			}
+			"CAI_Navigator::UpdateGoalPos"		// "Updating goal pos"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\x2A\x2A\x2A\x2A\x00\x56\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x80"
+			}
+			"PropBreakableCreateAll" // "Failed to create PropBreakable: would "
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x2A\x2A\x2A\x00\xA1\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x89\x2A\x2A\xFF\x2A\xFF"
+			}
+			"MarkPartitionHandleDirty" 	// "CTSListBase: Misaligned list\n" above function
+			{
+				"library"	"server"
+				"windows"	"\x8B\x51\x2A\x8B\x2A\x2A\x85\xC0\x74\x2C\x0F\xBF\x2A\x2A\x85\xC0"
+			}
+			"PropBreakablePrecacheAll" // "Trying to precache breakable prop, but"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x8B\x2A\x2A\xB9\x2A\x2A\x2A\x2A\x89"
+			}
+			"FindEntityInSphere"  // "    magnitude: %f" "limit"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x53\x56\x57\x8B\xF9\x8B\x2A\x2A\x85\xC9\x74\x14"
+			}
+			"CreateServerRagdoll" // "CRagdollPropAttached"
+			{
+				"library"	"server"
+				"windows"	"\x53\x8B\xDC\x83\xEC\x2A\x83\x2A\x2A\x83\x2A\x2A\x55\x8B\x2A\x2A\x89\x2A\x2A\x2A\x8B\x2A\xB8\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x8B"
+			}
+			"CSoundEnt::InsertSound" // "Could not AllocSound() for InsertSound"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x2A\x2A\x2A\x85\xC9\x0F\x2A\x2A\x2A\x2A\x00\x8B"
+			}
+			"CAI_TacticalServices::FindLosNode"	// "FindCover() - %s has no nearest node! ("  retn    20h
+			{
+				"library"	"server"
+				"windows"	"\x53\x8B\x2A\x83\xEC\x2A\x83\xE4\x2A\x83\xC4\x2A\x55\x8B\x2A\x2A\x89\x2A\x2A\x2A\x8B\xEC\x81\x2A\x2A\x2A\x2A\x00\x80\x2A\x2A\x2A\x2A\x2A\x00\x56\x8B\x2A\x57\x89\x2A\x2A\x0F\x2A\x2A\x2A\x2A\x00\x8B\x2A\x2A\x85\xC0\x74\x07"
+			}
+			"PrecacheModel"		// "Attempting to precache model, but model name is NULL"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\x2A\x2A\x85\xF6\x74\x53\x80"
+			}
+			"CAI_TacticalServices::FindCoverNode"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x2A\x2A\x2A\x2A\x80\x2A\x2A\x2A\x2A\x2A\x00\x53\x56\x57\x8B\x2A\x0F\x2A\x2A\x2A\x2A\x00"
+			}
+			"MapEntity_ParseEntity"	//	"classname missing from entity!\"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xB8\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x8D\x2A\x2A\x89\x2A\x2A\x89\x2A\x2A\x8D\x2A\x2A\x2A\x2A\x2A\x50"
+			}
+			"UTIL_PrecacheOther"	// "NULL Ent in UTIL_PrecacheOther\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x56\x8B\x2A\x2A\x8D\x2A\x2A\x56"
+			}
+			"AddListenerEntity"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x2A\x2A\x2A\x33\x2A\x56\x57\x8D\x2A\x2A\x2A\x01\x2A\x85"
+			}
+			"RemoveListenerEntity"   // "navprop"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8D\x2A\x2A\x81\x2A\x2A\x2A\x01\x2A\x50\xE8"
+			}
+			"SetEventIndexForSequence" // "Bad sequence in GetSequenceActivityNa" jmp
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x51\x57\x8B\x2A\x2A\x85\x2A\x74\x2A\x81"
+			}
+			"VPhysicsInitStatic"	// "trigger_changelevel to map %s has a la"
+			{
+				"library"	"server"
+				"windows"	"\x57\x8B\xF9\x83\x2A\x2A\x00\x0F\x2A\x2A\x2A\x2A\x00\xF6\x2A\x2A\x2A\x2A\x00\x01"
+			}
+			"ShouldRemoveThisRagdoll"	// "TICK:%5d:Ragdoll separation count: %d\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x80\x2A\x2A\x2A\x2A\x2A\x00\x74\x06\xB0\x01"
+			}
+			"GetDataObject"		// "%i : %s (ground %i %s)\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\xD1\xB8\x2A\x2A\x2A\x2A\x8B\x2A\x2A\xD3\x2A\x85\x2A\x2A\x2A\x2A\x00\x74\x19"
+			}
+			"FindEntityGenericNearest" // "AI_BaseNPC.SwishSound"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xFF\x2A\x2A\xD9\x2A\x2A\xFF\x2A\x2A\xFF\x2A\x2A\x51\xD9\x2A\x2A\xFF\x2A\x2A\xB9\x2A\x2A\x2A\x2A\xFF\x2A\x2A\xE8"
+			}
+			"FindInList"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x56\x57\x8B\x2A\x2A\x33\x2A\x8B\x2A\x80\x2A\x00\x74"
+			}
+			"Pickup_ForcePlayerToDropThisObject" // "RagdollImpact"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\x2A\x2A\x85\x2A\x74\x23"
+			}
+			"UTIL_GetLocalPlayer"
+			{
+				"library"	"server"
+				"windows"	"\xA1\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x83\x2A\x01\x7E\x03\x33\xC0\xC3"
+			}
+			"PrecacheInstancedScene"	// -makereslists 0FFFFFFFFh
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x2A\x2A\x2A\x83\x2A\x2A\x83\x2A\xFF\x75\x1F"
+			}
+			"AllocPooledString"	// "%s_weapon"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x85\xC0\x74\x24\x80\x2A\x00\x74\x1F"
+			}
+			"FindPooledString"	// "!player"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xFF\x2A\x2A\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x85\xC0\x74\x0E"
+			}
+			"CheckHasGamePhysicsSimulation"
+			{
+				"library"	"server"
+				"windows"	"\x56\x8B\x2A\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x00\xFF\x2A\x84\xC0\x75\x28"
+			}
+			"ActivityList_NameForIndex" // "ACT_INVALID"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x2A\x2A\x2A\x33\xC0\x56\x85\x2A\x7E\x1A"
+			}
+			"SetActivityForSequence"	// "***\nShared<->Private Activity collision!\n***\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x56\xFF\x2A\x2A\x8B\x2A\x2A\x8B\x2A\xE8\x2A\x2A\x2A\x2A\xFF\x2A\x2A\x8B"
+			}
+			"InvalidatePhysicsRecursive"	// "Bad SetLocalAngles(%f,%f,%f) on %s\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x8B\x2A\x2A\xB8\x2A\x2A\x2A\x2A\x56\x33"
+			}
+			"PhysicsPushEntity"	// "pushing entity (%s) that has parent (%s)!"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x56\x8B\x2A\x57\x8B\x2A\x2A\x2A\x2A\x2A\x83\x2A\xFF\x74\x60"
+			}
+			"CleanUpMap"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x80\x2A\x2A\x2A\x2A\x00\x00\x0F\x2A\x2A\x2A\x2A\x00\x56"
+			}
+			"ActivityList_IndexForName"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xFF\x2A\x2A\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x85\xC0\x78\x11"
+			}
+			"CUtlSymbol::Initialize"
+			{
+				"library"	"server"
+				"windows"	"\x80\x2A\x2A\x2A\x2A\x2A\x00\x0F\x2A\x2A\x2A\x00\x00\x56\x6A\x2A\xE8\x2A\x2A\x2A\x2A\x8B"
+			}
+			"CreateServerRagdollAttached"	// "prop_ragdoll_attached"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xB8\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x56\x57\x8B\x2A\x2A\x8B\x2A\x8B"
+			}
+			"CAI_NetworkBuilder::Build" // "ai_network_build_helper"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x8B\x2A\x2A\x53\x8B\x2A\x57\x8B"
+			}
+			"CAI_NetworkBuilder::InitNodePosition" // "ERROR: Node %.0f %.0f %.0f, WC ID# %i,"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\x2A\x2A\x8B\x2A\x2A\x83\x2A\x2A\x0F\x2A\x2A\x2A\x2A\x00\x83\x2A\x2A\x75\x0E"
+			}
+			"CBaseEntity::PostConstructor"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x56\x8B\x2A\x85\xC0\x74\x12"
+			}
+			"CAI_Navigator::SetGoal"	// "Failed to pathfind to nav goal:\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\x2A\x2A\x2A\x2A\x2A\x53\x56\x57\x8B\x2A\xE8\x2A\x2A\x2A\x2A\x80\x2A\x2A\x00"
+			}
+			"CBreakableProp::Break"  // "crate"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\x2A\x2A\x2A\x2A\x2A\x53\x56\x57\x8B\x2A\x8D\x2A\x2A\x51"
+			}
+			"CBreakableProp::HandleFirstCollisionInteractions" // "PaintSplatBlue"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x33\x2A\x39\x45\x2A\x0F\x2A\x2A\x56\x57\x8B"
+			}
+			"CBaseCombatCharacter::Event_Killed"	// "CombatCharacter.StopWeapon" & "item_healthvial"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x53\x56\x8B\x2A\xC6\x2A\x2A\x01\x8A\x2A\x2A\x2A\x2A\x00\x8D"
+			}
+			"CGameRules::RadiusDamage" // "GameRulesCreation"
+			{
+				"library"	"server"
+				"windows"	"\x53\x8B\xDC\x83\xEC\x2A\x83\xE4\x2A\x83\xC4\x2A\x55\x8B\x2A\x2A\x89\x2A\x2A\x2A\x8B\x2A\x81\x2A\x2A\x2A\x2A\x00\xF3\x2A\x2A\x2A\x2A\x8B"
+			}
+			"CCSPlayer::GetBulletTypeParameters"	// "BULLET_PLAYER_50AE" 3 args
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\x2A\x2A\x68\x2A\x2A\x2A\x2A\x56\xE8\x2A\x2A\x2A\x2A\x83\x2A\x2A\x84\xC0"
+			}
+			"CTriggerHurt::HurtAllTouchers"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x51\xA1\x2A\x2A\x2A\x2A\xF3\x2A\x2A\x2A\x2A\x53"
+			}
+			"CAI_NetworkManager::LoadNetworkGraph"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x2A\x2A\x2A\x2A\x53\x57\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x68\x2A\x2A\x2A\x2A\x89"
+			}
+
+
+
+			"g_EntityCollisionHash"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x8B\x2A\x53\x8B\x2A\x2A\x56\xFF"
+			}
+			"g_WorldEntity"    // "sv_stepsize"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x53\x56\x57\x8B\x2A\xC6\x2A\x2A\x2A\x2A\x2A\x2A\x68"
+			}
+			"g_vecAttackDir" // "Player.PlasmaDamage"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x83\x2A\x2A\x56\x57\x8B\x2A\xA8\x2A\x74"
+			}
+			"m_DefaultRelationship"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\xFF\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B"
+			}
+			"m_lastInteraction"
+			{
+				"library"	"server"
+				"windows"	"\xA1\x2A\x2A\x2A\x2A\x40\xA3\x2A\x2A\x2A\x2A\xC3"
+			}
+			"g_SoundController"	// "Invalid starting duration value in enve" the down 2 func , first 8B
+			{
+				"library"	"server"
+				"windows"	"\xB8\x08\x81\x2A\x2A\xC3"
+			}
+			"decalsystem"   // "Can't find decal %s"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x2A\x2A\x2A\x83\x2A\x2A\x8B\x2A\x56\xFF\x2A\x2A\xFF\x2A\x8B\x2A\x85\x2A\x78\x2A\x8D"
+			}
+			"m_pActivitySR"   // mov "ACT_INVALID" down func
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x2A\x2A\x2A\x85\xC9\x75\x05"
+			}
+			"m_iNumActivities" // mov "ACT_INVALID" up func
+			{
+				"library"	"server"
+				"windows"	"\x8B\x2A\x2A\x2A\x2A\x2A\x85\x2A\x0F\x2A\x2A\x2A\x2A\x2A\x6A\xFF"
+			}
+			"m_pEventSR"
+			{
+				"library"	"server"
+				"windows"	"\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x6A\x04"
+			}
+			"g_pPredictionSystems"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xA1\x2A\x2A\x2A\x2A\x85\xC0\x74\x0E"
+			}
+			"g_AI_SensedObjectsManager"
+			{
+				"library"	"server"
+				"windows"	"\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\xB9\x2A\x2A\x2A\x2A\xE9"
+			}
+			"my_g_MultiDamage"	// "AddMultiDamage:  g_MultiDamage.GetDamageForce"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x57\x8B\x2A\x2A\x85\x2A\x0F\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x83"
+			}
+			"g_Templates"	// "RegisterTemplateEntity: template entity"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x56\x57\x8B\x2A\x2A\xBA\x2A\x2A\x2A\x2A\x8B"
+			}
+			"g_EntityListPool"	//	"Value"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x8B\x2A\x2A\x56\x8B\x2A\x8B\x2A\x2A\x89"
+			}
+			"g_CEventQueue"		// "CompareValues"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x8B\x2A\x2A\x56\x57\x8B\x2A\x6A\x05"
+			}
+			"g_PostSimulationQueue"		// "Physics queue not empty, error!\n"
+			{
+				"library"	"server"
+				"windows"	"\x56\x57\x8B\xF9\xE8\x2A\x2A\x2A\x2A\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x33\x2A\x39"
+			}
+			"EventQueuePrioritizedEvent_t_s_Allocator"	// "EventQueuePrioritizedEvent_t pool"
+			{
+				"library"	"server"
+				"windows"	"\x6A\x00\x68\x2A\x2A\x2A\x2A\x6A\x02\x68\x2A\x00\x00\x00\x6A"
+			}
+			"g_TouchTrace"		// PhysicsMarkEntitiesAsTouching
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\x2A\x2A\x57\x8B\x2A\xB9\x2A\x2A\x2A\x2A\x56\xE8\x1B"
+			}
+			"gm_AllHints"
+			{
+				"library"	"server"
+				"windows"	"\x83\x3D\x2A\x2A\x2A\x2A\x00\x0F\x2A\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x56"
+			}
+			"s_GameSystems"   //  "AutoGameSystem already added to game sy"
+			{
+				"library"	"server"
+				"windows"	"\x56\x8B\x2A\x2A\x2A\x2A\x2A\x57\x8B\x2A\x2A\x2A\x2A\x2A\x85\x2A\x74\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x33"
+			}
+			"AI_Waypoint_t_s_Allocator"	// "Adding triangulation\n"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\x2A\x2A\x2A\x2A\x2A\x57\x8B\x2A\x89\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x84"
+			}
+			"g_AIFriendliesTalkSemaphore" // "[NPCState::%s]"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x8B\x2A\x8B\x2A\x2A\xFF\x2A\x84\xC0\x75\x06"
+			}
+			"g_AIFoesTalkSemaphore"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x2A\x2A\x8B\x2A\x8B\x2A\x2A\xFF\x2A\x84\xC0\x75\x06"
+			}
+			"g_pNotify" // "PlayerEnteredVehicle"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\x2A\x2A\x53\x8B\x2A\x2A\x56\x57\x8B\x2A\x2A\x8B\x2A\x57\x53\xE8\x2A\x2A\x2A\x2A\x84\xC0"
+			}
+			"gm_TypedHints" // same as CAI_HintManager_FindHint
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x8B\x2A\x2A\x8B\x2A\x2A\x89"
+			}
+			"s_pSymbolTable"
+			{
+				"library"	"server"
+				"windows"	"\x66\x8B\x2A\x51\x8B\x2A\x66\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x8B"
+			}
+			"g_interactionHitByPlayerThrownPhysObj" // "PROP_CLEARFLAGS"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x2A\x2A\x2A\x00\x53\x8B\x2A\x2A\x56\x57\x8B\x2A\x2A\x8B\x2A\x57\x53\xE8\x2A\x2A\x2A\x2A\xF3"
+			}
+			"g_AI_SquadManager"	// "SetSquad Input received for NPC %s, but
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x57\x8B\x2A\x8B\x2A\xFF\x2A\x2A\x2A\x2A\x2A\xA9"
+			}
+			"g_PhysWorldObject" // "phys_motor %s does not have a valid axi"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x56\x57\x8B\x2A\xE8\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x83"
+			}
+			"g_Collisions" //  "Entity %s (%s) %s Collision Group %d\"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\xB8\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x57\x8B\x2A\x2A\x85\x2A\x0F"
+			}
+			"sm_pSingleton"
+			{
+				"library"	"server"
+				"windows"	"\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x8B\x2A\x56\x68\x2A\x2A\x2A\x2A\x8B"
+			}
+			"g_interactionScriptedTarget"
+			{
+				"library"	"server"
+				"windows"	"\x83\x3D\x2A\x2A\x2A\x2A\x00\x56\x8B\xF1\x75\x0A"
+			}
+			"s_nCurrIterVal"
+			{
+				"library"	"server"
+				"windows"	"\xFF\x05\x2A\x2A\x2A\x2A\xC6\x05\x2A\x2A\x2A\x2A\x01\xC3"
+			}
+			"s_bIsIterating"
+			{
+				"library"	"server"
+				"windows"	"\xFF\x05\x2A\x2A\x2A\x2A\xC6\x05\x2A\x2A\x2A\x2A\x01\xC3"
+			}
+		}
+	}
+}

@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug - Old Metamod|Win32">
+      <Configuration>Debug - Old Metamod</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - Old Metamod|Win32">
+      <Configuration>Release - Old Metamod</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B3E797CF-4E77-4C9D-B8A8-7589B6902206}</ProjectGuid>
+    <RootNamespace>sdk</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'">..\..\Compile\$(SolutionName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'">..\..\Compile\$(SolutionName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'">..\..\Compile\$(SolutionName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'">..\..\Compile\$(SolutionName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Outputs>$(ProjectName).ext.dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalOptions>/MP /D SE_EPISODEONE=1 /D SE_DARKMESSIAH=2 /D SE_ORANGEBOX=3 /D SE_ORANGEBOXVALVE=4 /D SE_LEFT4DEAD=5 /D SE_LEFT4DEAD2=6 /D SE_ALIENSWARM=7 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..;..\sdk;..\CEntity;..\CEntity\modify;..\Monster;..\Custom;..\CEntity\Class;..\CEntity\AI;..\CEntity\stuff;..\..;..\..\..\public\sourcepawn;..\..\..\public\extensions;..\..\..\public;$(HL2SDKOB)\public;$(HL2SDKOB)\public\engine;$(HL2SDKOB)\public\game\server;$(HL2SDKOB)\public\tier0;$(HL2SDKOB)\public\tier1;$(HL2SDKOB)\public\tier3;$(HL2SDKOB)\public\vstdlib;$(HL2SDKOB)\public\mathlib;$(HL2SDKOB)\public\toolframework;$(HL2SDKOB)\public\SoundEmitterSystem;$(HL2SDKOB)\game\server;$(HL2SDKOB)\game\shared;$(SOURCEMM8)\core;$(SOURCEMM8)\core\sourcehook;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SDK_EXPORTS;SOURCEMOD_BUILD;SOURCE_ENGINE=4;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HL2MP;HL2_DLL;_ITERATOR_DEBUG_LEVEL=0;RAD_TELEMETRY_DISABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4541;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(HL2SDKOB)\lib\public\tier0.lib;$(HL2SDKOB)\lib\public\tier1.lib;$(HL2SDKOB)\lib\public\vstdlib.lib;$(HL2SDKOB)\lib\public\mathlib.lib;$(HL2SDKOB)\lib\public\tier3.lib;$(HL2SDKOB)\lib\public\tier2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'">
+    <CustomBuildStep>
+      <Command>
+</Command>
+      <Outputs>$(ProjectName).ext.dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalOptions>/MP /D SE_EPISODEONE=1 /D SE_DARKMESSIAH=2 /D SE_ORANGEBOX=3 /D SE_ORANGEBOXVALVE=4 /D SE_LEFT4DEAD=5 /D SE_LEFT4DEAD2=6 /D SE_ALIENSWARM=7 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..;..\sdk;..\CEntity;..\CEntity\modify;..\Monster;..\Custom;..\CEntity\Class;..\CEntity\AI;..\CEntity\stuff;..\..;..\..\..\public\sourcepawn;..\..\..\public\extensions;..\..\..\public;$(HL2SDKOB)\public;$(HL2SDKOB)\public\engine;$(HL2SDKOB)\public\game\server;$(HL2SDKOB)\public\tier0;$(HL2SDKOB)\public\tier1;$(HL2SDKOB)\public\tier3;$(HL2SDKOB)\public\vstdlib;$(HL2SDKOB)\public\mathlib;$(HL2SDKOB)\public\toolframework;$(HL2SDKOB)\public\SoundEmitterSystem;$(HL2SDKOB)\game\server;$(HL2SDKOB)\game\shared;$(SOURCEMM8)\core;$(SOURCEMM8)\core\sourcehook;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SDK_EXPORTS;SOURCEMOD_BUILD;SOURCE_ENGINE=4;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HL2MP;HL2_DLL;RAD_TELEMETRY_DISABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(HL2SDKOB)\lib\public\tier0.lib;$(HL2SDKOB)\lib\public\tier1.lib;$(HL2SDKOB)\lib\public\vstdlib.lib;$(HL2SDKOB)\lib\public\mathlib.lib;$(HL2SDKOB)\lib\public\tier3.lib;$(HL2SDKOB)\lib\public\tier2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CEntity\Class\CGameEnd.cpp" />
+    <ClCompile Include="..\CEntity\stuff\my_soundenvelope.cpp" />
+    <ClCompile Include="..\command.cpp" />
+    <ClCompile Include="..\extension.cpp" />
+    <ClCompile Include="..\MonsterTools.cpp" />
+    <ClCompile Include="..\patch.cpp" />
+    <ClCompile Include="..\scanfunc.cpp" />
+    <ClCompile Include="..\sign_func.cpp" />
+    <ClCompile Include="..\Monster\antlion_maker.cpp" />
+    <ClCompile Include="..\Monster\cbasehelicopter.cpp" />
+    <ClCompile Include="..\Monster\monstermaker.cpp" />
+    <ClCompile Include="..\Monster\npc_advisor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Monster\npc_alyx.cpp" />
+    <ClCompile Include="..\Monster\npc_antlion.cpp" />
+    <ClCompile Include="..\Monster\npc_antlionguard.cpp" />
+    <ClCompile Include="..\Monster\npc_attackchopper.cpp" />
+    <ClCompile Include="..\Monster\npc_barnacle.cpp" />
+    <ClCompile Include="..\Monster\npc_barney.cpp" />
+    <ClCompile Include="..\Monster\npc_basescanner.cpp" />
+    <ClCompile Include="..\Monster\npc_basezombie.cpp" />
+    <ClCompile Include="..\Monster\npc_breen.cpp" />
+    <ClCompile Include="..\Monster\npc_bullseye.cpp" />
+    <ClCompile Include="..\Monster\npc_bullsquid.cpp" />
+    <ClCompile Include="..\Monster\npc_citizen17.cpp" />
+    <ClCompile Include="..\Monster\npc_combine.cpp" />
+    <ClCompile Include="..\Monster\npc_combinecamera.cpp" />
+    <ClCompile Include="..\Monster\npc_combinedropship.cpp" />
+    <ClCompile Include="..\Monster\npc_combinegunship.cpp" />
+    <ClCompile Include="..\Monster\npc_combines.cpp" />
+    <ClCompile Include="..\Monster\npc_crow.cpp" />
+    <ClCompile Include="..\Monster\npc_dog.cpp" />
+    <ClCompile Include="..\Monster\npc_eli.cpp" />
+    <ClCompile Include="..\Monster\npc_enemyfinder.cpp" />
+    <ClCompile Include="..\Monster\npc_fastzombie.cpp" />
+    <ClCompile Include="..\Monster\npc_gman.cpp" />
+    <ClCompile Include="..\Monster\npc_headcrab.cpp" />
+    <ClCompile Include="..\Monster\npc_houndeye.cpp" />
+    <ClCompile Include="..\Monster\npc_hunter.cpp" />
+    <ClCompile Include="..\Monster\npc_kleiner.cpp" />
+    <ClCompile Include="..\Monster\npc_launcher.cpp" />
+    <ClCompile Include="..\Monster\npc_magnusson.cpp" />
+    <ClCompile Include="..\Monster\npc_manhack.cpp" />
+    <ClCompile Include="..\Monster\npc_metropolice.cpp" />
+    <ClCompile Include="..\Monster\npc_missiledefense.cpp" />
+    <ClCompile Include="..\Monster\npc_monk.cpp" />
+    <ClCompile Include="..\Monster\npc_mossman.cpp" />
+    <ClCompile Include="..\Monster\npc_playercompanion.cpp" />
+    <ClCompile Include="..\Monster\npc_PoisonZombie.cpp" />
+    <ClCompile Include="..\Monster\npc_puppet.cpp" />
+    <ClCompile Include="..\Monster\npc_rollermine.cpp" />
+    <ClCompile Include="..\Monster\npc_scanner.cpp" />
+    <ClCompile Include="..\Monster\npc_sniper.cpp" />
+    <ClCompile Include="..\Monster\npc_spotlight.cpp" />
+    <ClCompile Include="..\Monster\npc_stalker.cpp" />
+    <ClCompile Include="..\Monster\npc_strider.cpp" />
+    <ClCompile Include="..\Monster\npc_turret_ceiling.cpp" />
+    <ClCompile Include="..\Monster\npc_turret_floor.cpp" />
+    <ClCompile Include="..\Monster\npc_turret_ground.cpp" />
+    <ClCompile Include="..\Monster\npc_vortigaunt.cpp" />
+    <ClCompile Include="..\Monster\npc_zombie.cpp" />
+    <ClCompile Include="..\Monster\npc_zombine.cpp" />
+    <ClCompile Include="..\Monster\temp_npc.cpp" />
+    <ClCompile Include="..\sdk\smsdk_ext.cpp" />
+    <ClCompile Include="..\CEntity\CE_recipientfilter.cpp" />
+    <ClCompile Include="..\CEntity\CECollisionProperty.cpp" />
+    <ClCompile Include="..\CEntity\CEntity.cpp" />
+    <ClCompile Include="..\CEntity\CEntityBase.cpp" />
+    <ClCompile Include="..\CEntity\CEntityManager.cpp" />
+    <ClCompile Include="..\CEntity\CTakeDamageInfo.cpp" />
+    <ClCompile Include="..\CEntity\cutil.cpp" />
+    <ClCompile Include="..\CEntity\EntityOutput.cpp" />
+    <ClCompile Include="..\CEntity\GameSystem.cpp" />
+    <ClCompile Include="..\CEntity\physics.cpp" />
+    <ClCompile Include="..\CEntity\physics_impact_damage.cpp" />
+    <ClCompile Include="..\CEntity\rtti.cpp" />
+    <ClCompile Include="..\CEntity\Class\CAI_FollowGoal_Fix.cpp" />
+    <ClCompile Include="..\CEntity\Class\CAI_NPC.cpp" />
+    <ClCompile Include="..\CEntity\Class\CAI_NPC_AI_Patch.cpp" />
+    <ClCompile Include="..\CEntity\Class\CAnimating.cpp" />
+    <ClCompile Include="..\CEntity\Class\CAnimatingOverlay.cpp" />
+    <ClCompile Include="..\CEntity\Class\CBeam.cpp" />
+    <ClCompile Include="..\CEntity\Class\CBoneFollower.cpp" />
+    <ClCompile Include="..\CEntity\Class\CBreakable.cpp" />
+    <ClCompile Include="..\CEntity\Class\CBreakableProp.cpp" />
+    <ClCompile Include="..\CEntity\Class\CCombatCharacter.cpp" />
+    <ClCompile Include="..\CEntity\Class\CCombatCharacter_Patch.cpp" />
+    <ClCompile Include="..\CEntity\Class\CCombatWeapon.cpp" />
+    <ClCompile Include="..\CEntity\Class\CCycler_Fix.cpp" />
+    <ClCompile Include="..\CEntity\Class\CDoor.cpp" />
+    <ClCompile Include="..\CEntity\Class\CDynamicLink.cpp" />
+    <ClCompile Include="..\CEntity\Class\CDynamicProp.cpp" />
+    <ClCompile Include="..\CEntity\Class\CEAI_ScriptedSequence.cpp" />
+    <ClCompile Include="..\CEntity\Class\CEntityFlame.cpp" />
+    <ClCompile Include="..\CEntity\Class\CEnvExplosion.cpp" />
+    <ClCompile Include="..\CEntity\Class\CEnvGunfire.cpp" />
+    <ClCompile Include="..\CEntity\Class\CEnvLaser.cpp" />
+    <ClCompile Include="..\CEntity\Class\CEnvPlayerSurfaceTrigger.cpp" />
+    <ClCompile Include="..\CEntity\Class\CESoundEnt.cpp" />
+    <ClCompile Include="..\CEntity\Class\CFilters.cpp" />
+    <ClCompile Include="..\CEntity\Class\CFire.cpp" />
+    <ClCompile Include="..\CEntity\Class\CFlex.cpp" />
+    <ClCompile Include="..\CEntity\Class\CGib.cpp" />
+    <ClCompile Include="..\CEntity\Class\CGrenade.cpp" />
+    <ClCompile Include="..\CEntity\Class\CGrenadeWeapon.cpp" />
+    <ClCompile Include="..\CEntity\Class\CInfoTarget_Fix.cpp" />
+    <ClCompile Include="..\CEntity\Class\CItem.cpp" />
+    <ClCompile Include="..\CEntity\Class\CMomentaryRotButton.cpp" />
+    <ClCompile Include="..\CEntity\Class\CNPCBaseWeapon.cpp" />
+    <ClCompile Include="..\CEntity\Class\CParticleEntity.cpp" />
+    <ClCompile Include="..\CEntity\Class\CPathTrack.cpp" />
+    <ClCompile Include="..\CEntity\Class\CPhysBox.cpp" />
+    <ClCompile Include="..\CEntity\Class\CPhysicsProp.cpp" />
+    <ClCompile Include="..\CEntity\Class\CPlayer.cpp" />
+    <ClCompile Include="..\CEntity\Class\CProp.cpp" />
+    <ClCompile Include="..\CEntity\Class\CPropDoor.cpp" />
+    <ClCompile Include="..\CEntity\Class\CPropVehicle.cpp" />
+    <ClCompile Include="..\CEntity\Class\CRagdollBoogie.cpp" />
+    <ClCompile Include="..\CEntity\Class\CRagdollProp.cpp" />
+    <ClCompile Include="..\CEntity\Class\CScriptedTarget.cpp" />
+    <ClCompile Include="..\CEntity\Class\CSkyCamera.cpp" />
+    <ClCompile Include="..\CEntity\Class\CSmoke_trail.cpp" />
+    <ClCompile Include="..\CEntity\Class\CSoda_Fix.cpp" />
+    <ClCompile Include="..\CEntity\Class\CSpotlightEnd.cpp" />
+    <ClCompile Include="..\CEntity\Class\CSprite.cpp" />
+    <ClCompile Include="..\CEntity\Class\CSpriteTrail.cpp" />
+    <ClCompile Include="..\CEntity\Class\CToggle.cpp" />
+    <ClCompile Include="..\CEntity\Class\CTrigger.cpp" />
+    <ClCompile Include="..\CEntity\Class\CTriggerMultiple.cpp" />
+    <ClCompile Include="..\CEntity\Class\CWorld.cpp" />
+    <ClCompile Include="..\CEntity\Class\ItemRespawnSystem.cpp" />
+    <ClCompile Include="..\CEntity\stuff\ammodef.cpp" />
+    <ClCompile Include="..\CEntity\stuff\animation.cpp" />
+    <ClCompile Include="..\CEntity\stuff\bone_setup.cpp" />
+    <ClCompile Include="..\CEntity\stuff\collisionutils.cpp" />
+    <ClCompile Include="..\CEntity\stuff\effects.cpp" />
+    <ClCompile Include="..\CEntity\stuff\eventqueue.cpp" />
+    <ClCompile Include="..\CEntity\stuff\globalstate.cpp" />
+    <ClCompile Include="..\CEntity\stuff\ragdoll_shared.cpp" />
+    <ClCompile Include="..\CEntity\stuff\simtimer.cpp" />
+    <ClCompile Include="..\CEntity\stuff\stringregistry.cpp" />
+    <ClCompile Include="..\CEntity\stuff\studio.cpp" />
+    <ClCompile Include="..\CEntity\stuff\TemplateEntities.cpp" />
+    <ClCompile Include="..\CEntity\stuff\vehicle_viewblend_shared.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Baseactor.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_basehumanoid.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_basenpc_physicsflyer.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior_actbusy.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior_assault.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior_fear.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior_follow.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior_functank.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior_holster.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior_lead.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior_police.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior_rappel.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_behavior_standoff.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Blended_Movement.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Criteria.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_goal_police.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_goalentity.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_Hint.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Interest_Target.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_Link.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_localnavigator.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_Memory.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_Motor.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Moveprobe.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Moveshoot.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Movesolver.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Navigator.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_Network.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_NetworkManager.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_Node.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_pathfinder.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_planesolver.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_playerally.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_ResponseSystem.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Route.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_senses.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Sentence.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_speech.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_speechfilter.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_spotlight.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_Squad.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_tacticalservices.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_trackpather.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_utils.cpp" />
+    <ClCompile Include="..\CEntity\AI\CAI_waypoint.cpp" />
+    <ClCompile Include="..\CEntity\AI\CSoundent.cpp" />
+    <ClCompile Include="..\centity\ai\activitylist.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_Default.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_HULL.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_LocalIdSpace.cpp" />
+    <ClCompile Include="..\centity\ai\CAI_Schedule.cpp" />
+    <ClCompile Include="..\centity\ai\CH_AI.cpp" />
+    <ClCompile Include="..\CEntity\AI\choreoevent.cpp" />
+    <ClCompile Include="..\CEntity\AI\choreoscene.cpp" />
+    <ClCompile Include="..\centity\ai\eventlist.cpp" />
+    <ClCompile Include="..\CEntity\AI\interpolatortypes.cpp" />
+    <ClCompile Include="..\CEntity\AI\sceneentity.cpp" />
+    <ClCompile Include="..\asm\asm.c" />
+    <ClCompile Include="..\CDetour\detours.cpp" />
+    <ClCompile Include="..\Custom\ai_relationship.cpp" />
+    <ClCompile Include="..\Custom\basegrenade_contact.cpp" />
+    <ClCompile Include="..\Custom\cguard.cpp" />
+    <ClCompile Include="..\Custom\combine_mine.cpp" />
+    <ClCompile Include="..\Custom\env_headcrabcanister.cpp" />
+    <ClCompile Include="..\Custom\env_headcrabcanister_shared.cpp" />
+    <ClCompile Include="..\Custom\fourwheelvehiclephysics.cpp" />
+    <ClCompile Include="..\Custom\func_tank.cpp" />
+    <ClCompile Include="..\Custom\grenade_beam.cpp" />
+    <ClCompile Include="..\Custom\grenade_frag.cpp" />
+    <ClCompile Include="..\Custom\grenade_homer.cpp" />
+    <ClCompile Include="..\Custom\grenade_pathfollower.cpp" />
+    <ClCompile Include="..\Custom\grenade_spit.cpp" />
+    <ClCompile Include="..\Custom\item_ammo.cpp" />
+    <ClCompile Include="..\Custom\item_ammo_crate.cpp" />
+    <ClCompile Include="..\Custom\item_battery.cpp" />
+    <ClCompile Include="..\Custom\item_healthkit.cpp" />
+    <ClCompile Include="..\Custom\item_recharge.cpp" />
+    <ClCompile Include="..\Custom\item_rpg_round.cpp" />
+    <ClCompile Include="..\Custom\ladder.cpp" />
+    <ClCompile Include="..\Custom\pickup.cpp" />
+    <ClCompile Include="..\Custom\player_pickup.cpp" />
+    <ClCompile Include="..\Custom\prop_combine_ball.cpp" />
+    <ClCompile Include="..\Custom\prop_thumper.cpp" />
+    <ClCompile Include="..\Custom\triggers.cpp" />
+    <ClCompile Include="..\Custom\vehicle_base.cpp" />
+    <ClCompile Include="..\Custom\vehicle_jeep.cpp" />
+    <ClCompile Include="..\Custom\weapon_alyxgun.cpp" />
+    <ClCompile Include="..\Custom\weapon_ar2.cpp" />
+    <ClCompile Include="..\Custom\weapon_physcannon_replace.cpp" />
+    <ClCompile Include="..\Custom\weapon_pistol.cpp" />
+    <ClCompile Include="..\Custom\weapon_replace.cpp" />
+    <ClCompile Include="..\Custom\weapon_rpg.cpp" />
+    <ClCompile Include="..\Custom\weapon_rpg_replace.cpp" />
+    <ClCompile Include="..\Custom\weapon_shotgun.cpp" />
+    <ClCompile Include="..\Custom\weapon_smg1.cpp" />
+    <ClCompile Include="..\Custom\weapon_striderbuster.cpp" />
+    <ClCompile Include="..\Custom\weapon_stunstick.cpp" />
+    <ClCompile Include="..\SM\CustomNpcManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\SM\natives.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\SM\npc_custom.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CEntity\Class\CGameEnd.h" />
+    <ClInclude Include="..\CEntity\stuff\my_soundenvelope.h" />
+    <ClInclude Include="..\extension.h" />
+    <ClInclude Include="..\Interface\IMonster.h" />
+    <ClInclude Include="..\MonsterConfig.h" />
+    <ClInclude Include="..\MonsterTools.h" />
+    <CustomBuildStep Include="..\sign_func.h" />
+    <CustomBuildStep Include="..\Monster\antlion_maker.h" />
+    <CustomBuildStep Include="..\Monster\cbasehelicopter.h" />
+    <CustomBuildStep Include="..\Monster\monstermaker.h" />
+    <ClInclude Include="..\Monster\npc_alyx.h" />
+    <CustomBuildStep Include="..\Monster\npc_antlion.h" />
+    <CustomBuildStep Include="..\Monster\npc_attackchopper.h" />
+    <ClInclude Include="..\Monster\npc_barnacle.h" />
+    <ClInclude Include="..\Monster\npc_basescanner.h" />
+    <CustomBuildStep Include="..\Monster\npc_basezombie.h" />
+    <CustomBuildStep Include="..\Monster\npc_bullseye.h" />
+    <ClInclude Include="..\Monster\npc_bullsquid.h" />
+    <ClInclude Include="..\Monster\npc_citizen17.h" />
+    <CustomBuildStep Include="..\Monster\npc_combine.h" />
+    <CustomBuildStep Include="..\Monster\npc_combines.h" />
+    <ClInclude Include="..\Monster\npc_crow.h" />
+    <CustomBuildStep Include="..\Monster\npc_headcrab.h" />
+    <ClInclude Include="..\Monster\npc_houndeye.h" />
+    <CustomBuildStep Include="..\Monster\npc_hunter.h" />
+    <CustomBuildStep Include="..\Monster\npc_manhack.h" />
+    <CustomBuildStep Include="..\Monster\npc_metropolice.h" />
+    <CustomBuildStep Include="..\Monster\npc_playercompanion.h" />
+    <CustomBuildStep Include="..\Monster\npc_rollermine.h" />
+    <CustomBuildStep Include="..\Monster\npc_scanner.h" />
+    <CustomBuildStep Include="..\Monster\npc_stalker.h" />
+    <ClInclude Include="..\Monster\npc_strider.h" />
+    <CustomBuildStep Include="..\Monster\npc_turret_floor.h" />
+    <ClInclude Include="..\Monster\npc_turret_ground.h" />
+    <CustomBuildStep Include="..\Monster\npc_vortigaunt.h" />
+    <ClInclude Include="..\sdk\smsdk_config.h" />
+    <ClInclude Include="..\sdk\smsdk_ext.h" />
+    <ClInclude Include="..\CEntity\CE_Define.h" />
+    <ClInclude Include="..\CEntity\CE_recipientfilter.h" />
+    <ClInclude Include="..\CEntity\CECollisionProperty.h" />
+    <ClInclude Include="..\CEntity\CEntity.h" />
+    <ClInclude Include="..\CEntity\CEntityBase.h" />
+    <ClInclude Include="..\CEntity\CEntityManager.h" />
+    <ClInclude Include="..\CEntity\CTakeDamageInfo.h" />
+    <ClInclude Include="..\CEntity\cutil.h" />
+    <ClInclude Include="..\CEntity\EntityOutput.h" />
+    <ClInclude Include="..\CEntity\gamemovement.h" />
+    <ClInclude Include="..\CEntity\GameSystem.h" />
+    <ClInclude Include="..\CEntity\IEntityFactory.h" />
+    <ClInclude Include="..\CEntity\macros.h" />
+    <ClInclude Include="..\CEntity\physics.h" />
+    <ClInclude Include="..\CEntity\rtti.h" />
+    <ClInclude Include="..\CEntity\vehicles.h" />
+    <ClInclude Include="..\CEntity\Class\CAI_FollowGoal_Fix.h" />
+    <ClInclude Include="..\CEntity\Class\CAI_NPC.h" />
+    <ClInclude Include="..\CEntity\Class\CAI_NPC_AI_Patch.h" />
+    <ClInclude Include="..\CEntity\Class\CAnimating.h" />
+    <ClInclude Include="..\CEntity\Class\CAnimatingOverlay.h" />
+    <ClInclude Include="..\CEntity\Class\CBeam.h" />
+    <ClInclude Include="..\CEntity\Class\CBoneFollower.h" />
+    <ClInclude Include="..\CEntity\Class\CBreakable.h" />
+    <ClInclude Include="..\CEntity\Class\CBreakableProp.h" />
+    <ClInclude Include="..\CEntity\Class\CCombatCharacter.h" />
+    <ClInclude Include="..\CEntity\Class\CCombatCharacter_Patch.h" />
+    <ClInclude Include="..\CEntity\Class\CCombatWeapon.h" />
+    <ClInclude Include="..\CEntity\Class\CCycler_Fix.h" />
+    <ClInclude Include="..\CEntity\Class\CDoor.h" />
+    <ClInclude Include="..\CEntity\Class\CDynamicLink.h" />
+    <ClInclude Include="..\CEntity\Class\CDynamicProp.h" />
+    <ClInclude Include="..\CEntity\Class\CEAI_ScriptedSequence.h" />
+    <ClInclude Include="..\CEntity\Class\CEntityFlame.h" />
+    <ClInclude Include="..\CEntity\Class\CEnvExplosion.h" />
+    <ClInclude Include="..\CEntity\Class\CEnvGunfire.h" />
+    <ClInclude Include="..\CEntity\Class\CEnvLaser.h" />
+    <ClInclude Include="..\CEntity\Class\CEnvPlayerSurfaceTrigger.h" />
+    <ClInclude Include="..\CEntity\Class\CESoundEnt.h" />
+    <ClInclude Include="..\CEntity\Class\CFilters.h" />
+    <ClInclude Include="..\CEntity\Class\CFire.h" />
+    <ClInclude Include="..\CEntity\Class\CFlex.h" />
+    <ClInclude Include="..\CEntity\Class\CGib.h" />
+    <ClInclude Include="..\CEntity\Class\CGrenade.h" />
+    <ClInclude Include="..\CEntity\Class\CGrenadeWeapon.h" />
+    <ClInclude Include="..\CEntity\Class\CInfoTarget_Fix.h" />
+    <ClInclude Include="..\CEntity\Class\CItem.h" />
+    <ClInclude Include="..\CEntity\Class\CMomentaryRotButton.h" />
+    <CustomBuildStep Include="..\CEntity\Class\CNPCBaseWeapon.h" />
+    <ClInclude Include="..\CEntity\Class\CParticleEntity.h" />
+    <ClInclude Include="..\CEntity\Class\CPathTrack.h" />
+    <ClInclude Include="..\CEntity\Class\CPhysBox.h" />
+    <ClInclude Include="..\CEntity\Class\CPhysicsProp.h" />
+    <ClInclude Include="..\CEntity\Class\CPlayer.h" />
+    <ClInclude Include="..\CEntity\Class\CProp.h" />
+    <ClInclude Include="..\CEntity\Class\CPropDoor.h" />
+    <ClInclude Include="..\CEntity\Class\CPropVehicle.h" />
+    <ClInclude Include="..\CEntity\Class\CRagdollBoogie.h" />
+    <ClInclude Include="..\CEntity\Class\CRagdollProp.h" />
+    <ClInclude Include="..\CEntity\Class\CScriptedTarget.h" />
+    <ClInclude Include="..\CEntity\Class\CSkyCamera.h" />
+    <ClInclude Include="..\CEntity\Class\CSmoke_trail.h" />
+    <ClInclude Include="..\CEntity\Class\CSoda_Fix.h" />
+    <ClInclude Include="..\CEntity\Class\CSpotlightEnd.h" />
+    <ClInclude Include="..\CEntity\Class\CSprite.h" />
+    <ClInclude Include="..\CEntity\Class\CSpriteTrail.h" />
+    <ClInclude Include="..\CEntity\Class\CToggle.h" />
+    <ClInclude Include="..\CEntity\Class\CTrigger.h" />
+    <ClInclude Include="..\CEntity\Class\CTriggerMultiple.h" />
+    <ClInclude Include="..\CEntity\Class\CWorld.h" />
+    <ClInclude Include="..\CEntity\Class\ItemRespawnSystem.h" />
+    <ClInclude Include="..\CEntity\stuff\collisionutils.h" />
+    <ClInclude Include="..\CEntity\stuff\effects.h" />
+    <ClInclude Include="..\CEntity\stuff\eventqueue.h" />
+    <ClInclude Include="..\CEntity\stuff\globalstate.h" />
+    <ClInclude Include="..\CEntity\stuff\stringregistry.h" />
+    <ClInclude Include="..\CEntity\stuff\TemplateEntities.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Baseactor.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_basehumanoid.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_basenpc_physicsflyer.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Behavior.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_behavior_actbusy.h" />
+    <CustomBuildStep Include="..\CEntity\AI\CAI_behavior_assault.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_behavior_fear.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_behavior_follow.h" />
+    <CustomBuildStep Include="..\CEntity\AI\CAI_behavior_functank.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_behavior_holster.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_behavior_lead.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_behavior_police.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_behavior_rappel.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_behavior_standoff.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Blended_Movement.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_component.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Criteria.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_goal_police.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_goalentity.h" />
+    <ClInclude Include="..\centity\ai\CAI_Hint.h" />
+    <ClInclude Include="..\centity\ai\CAI_Initutils.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Interactions.h" />
+    <ClInclude Include="..\centity\ai\CAI_Link.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_localnavigator.h" />
+    <ClInclude Include="..\centity\ai\CAI_Memory.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Motor.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Moveprobe.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Moveshoot.h" />
+    <ClInclude Include="..\centity\ai\CAI_Navigator.h" />
+    <ClInclude Include="..\centity\ai\CAI_Network.h" />
+    <ClInclude Include="..\centity\ai\CAI_NetworkManager.h" />
+    <ClInclude Include="..\centity\ai\CAI_Node.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_pathfinder.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_planesolver.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_playerally.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_ResponseSystem.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Route.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_schedule.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_senses.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Sentence.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_speech.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_speechfilter.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_spotlight.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_Squad.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_tacticalservices.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_trackpather.h" />
+    <ClInclude Include="..\CEntity\AI\CAI_utils.h" />
+    <ClInclude Include="..\CEntity\AI\CSoundent.h" />
+    <ClInclude Include="..\asm\asm.h" />
+    <ClInclude Include="..\CDetour\detourhelpers.h" />
+    <ClInclude Include="..\CDetour\detours.h" />
+    <ClInclude Include="..\Custom\combine_mine.h" />
+    <CustomBuildStep Include="..\Custom\env_headcrabcanister_shared.h" />
+    <ClInclude Include="..\Custom\fourwheelvehiclephysics.h" />
+    <CustomBuildStep Include="..\Custom\func_tank.h" />
+    <CustomBuildStep Include="..\Custom\grenade_beam.h" />
+    <ClInclude Include="..\Custom\grenade_frag.h" />
+    <ClInclude Include="..\Custom\grenade_homer.h" />
+    <ClInclude Include="..\Custom\grenade_pathfollower.h" />
+    <CustomBuildStep Include="..\Custom\grenade_spit.h" />
+    <CustomBuildStep Include="..\Custom\item_healthkit.h" />
+    <ClInclude Include="..\Custom\ladder.h" />
+    <CustomBuildStep Include="..\Custom\pickup.h" />
+    <CustomBuildStep Include="..\Custom\player_pickup.h" />
+    <ClInclude Include="..\Custom\prop_combine_ball.h" />
+    <ClInclude Include="..\Custom\vehicle_base.h" />
+    <ClInclude Include="..\Custom\vehicle_jeep.h" />
+    <CustomBuildStep Include="..\Custom\weapon_physcannon_replace.h" />
+    <ClInclude Include="..\Custom\weapon_pistol.h" />
+    <CustomBuildStep Include="..\Custom\weapon_rpg.h" />
+    <CustomBuildStep Include="..\Custom\weapon_rpg_replace.h" />
+    <ClInclude Include="..\Custom\weapon_smg1.h" />
+    <CustomBuildStep Include="..\Custom\weapon_striderbuster.h" />
+    <CustomBuildStep Include="..\Custom\weapon_stunstick.h" />
+    <CustomBuildStep Include="..\SM\CustomNpcManager.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\SM\npc_custom.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug - Old Metamod|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release - Old Metamod|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
